@@ -1,0 +1,7 @@
+{
+	id: "637A04B608F793A3"
+	loot_size: 1
+	order_index: 1
+	rewards: [{ count: 16, item: "minecraft:string", random_bonus: 16 }]
+	title: "String"
+}

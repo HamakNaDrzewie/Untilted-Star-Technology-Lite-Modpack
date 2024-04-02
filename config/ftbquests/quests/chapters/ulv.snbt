@@ -1,0 +1,2341 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ulv"
+	group: "6AEA88730D2C50F5"
+	id: "4DA143D7CF1C058F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Ok, you should know the drill by now, start off by chopping down a few trees"]
+			id: "1538CA8318B04B73"
+			rewards: [{
+				count: 16
+				id: "3FBA6E6DADC29971"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01C6FAECABAB7A94"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "Woody beginings..."
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1538CA8318B04B73"]
+			description: ["Currently at the moment saplings is your best bet for getting more dirt in the barrel"]
+			hide: true
+			id: "660A7909608F2450"
+			tasks: [{
+				id: "329EBBEC26BD0CC6"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
+			title: "I need me some dirt..."
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["660A7909608F2450"]
+			description: ["You probably want to get a decant supply of dirt for either island expansion or sieving"]
+			hide: true
+			id: "7A120BB736A09385"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "353658A98BFABA37"
+				table_id: 3126669695306424321L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 16L
+				id: "7FDFA452BDA61C30"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "Dirty grind"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1538CA8318B04B73"]
+			description: ["Breaking leaves on a tree will give higher chances for apples and saplings but will also give you silk worms "]
+			hide: true
+			id: "6FE54C81BAA52EAD"
+			tasks: [{
+				id: "358A28EF30B61249"
+				item: {
+					Count: 1b
+					id: "exdeorum:crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6FE54C81BAA52EAD"]
+			description: ["If you use the silk worms on the leaves of a tree they will begin to turn white. Once all the leaves are white use your crook and break them for string"]
+			hide: true
+			id: "434A25684D806A87"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DD0B4AFD01ED4A9"
+				table_id: 1060038186679170566L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "12161F988377E5A2"
+				item: "exdeorum:silk_worm"
+				type: "item"
+			}]
+			title: "Pest control"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["434A25684D806A87"]
+			description: ["Now that you have string you can put it to good use"]
+			hide: true
+			id: "3C33BEA4582094FF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F0763B59D2C3035"
+				table_id: 7168046936794567587L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7C74915C9BAA8C8E"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			title: "The Silky Road"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3C33BEA4582094FF"
+				"0AE74DE080869F58"
+			]
+			description: ["Ah the good ol' days of Ex Nihilo, wait what, whats Ex Deorum?"]
+			hide: true
+			id: "730EAA1DF5563794"
+			tasks: [{
+				id: "0625CF928C6C58E8"
+				item: "exdeorum:string_mesh"
+				type: "item"
+			}]
+			title: "Sieving away"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1538CA8318B04B73"]
+			hide: true
+			id: "0AE74DE080869F58"
+			tasks: [{
+				id: "013A5DE06E6903EF"
+				item: "exdeorum:oak_sieve"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["730EAA1DF5563794"]
+			description: [
+				"Now that you have obtained the power of sieving dirt, you can get pebbles."
+				""
+				"You will need alot of pebbles (and I mean alot) "
+				""
+				"For now get quite a few stone pebbles to begin with,"
+				""
+				"In the near future you will gain access to better ways of obtaining these pebbles"
+			]
+			hide: true
+			id: "051EBD457EB9446A"
+			rewards: [{
+				count: 32
+				id: "0756E156771760E0"
+				item: "exdeorum:stone_pebble"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AC9FD9E0816EF38"
+				item: "exdeorum:stone_pebble"
+				type: "item"
+			}]
+			title: "Not for throwing at birds"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["730EAA1DF5563794"]
+			description: [
+				"If you didnt know, bamboo is the fastest growing plant in the world, that includes minecraft"
+				""
+				"You can setup a small bamboo farm and use the bamboo in a composter to get bonemeal or in a barrel to get more dirt"
+			]
+			hide: true
+			id: "3979BFACF269EFE9"
+			rewards: [{
+				count: 16
+				id: "43EAA9F467732ECD"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66104386DE06D6A2"
+				item: "minecraft:bamboo"
+				type: "item"
+			}]
+			title: "I need more dirt and FAST"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["730EAA1DF5563794"]
+			description: ["Ahhh, green grass on your island, it looks better already"]
+			hide: true
+			id: "3D4CBBFAD85EC682"
+			rewards: [{
+				count: 4
+				id: "38BFC64DE763288B"
+				item: "exdeorum:grass_seeds"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53E923A70AB31301"
+				item: "exdeorum:grass_seeds"
+				type: "item"
+			}]
+			title: "What a seedy place..."
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D4CBBFAD85EC682"]
+			description: ["Now that you have grass seeds &m(and hopefully a lot of it)&r, you can make moss, you next big sifting material"]
+			hide: true
+			id: "565CEC17B9AF423D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "03429C15EA78050D"
+				table_id: 768310069999390220L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "322978AEA9357348"
+				item: "minecraft:moss_block"
+				type: "item"
+			}]
+			title: "Mr. Moss"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["565CEC17B9AF423D"]
+			description: ["Lucky you, in StarT Lite you have access to rubber trees to get sticky resin."]
+			hide: true
+			id: "2DDD2E9818B3051A"
+			rewards: [{
+				count: 2
+				id: "68717BDF6D1B9F1E"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00D9B4D90FA6516C"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			title: "Oily stuff"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["051EBD457EB9446A"]
+			description: ["With your stone pebbles, you can now craft &6cobblestone&r"]
+			hide: true
+			id: "23C6434131950A67"
+			rewards: [{
+				count: 16
+				id: "1AE8068D972AE1E6"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D86705C9ECAE7B6"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["23C6434131950A67"]
+			description: ["Dont need to explain much with this one"]
+			hide: true
+			id: "4B422DF4BD39E75B"
+			rewards: [{
+				id: "2E7F26CA6071690C"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E67EBCC22BD0D84"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["23C6434131950A67"]
+			description: ["To crush those who hurt you, aka cobblestone, gravel, sand and dust"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "exdeorum:wooden_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0D85C41FAF677E85"
+			rewards: [{
+				id: "6838C65400CBF0D6"
+				item: {
+					Count: 1b
+					id: "exdeorum:wooden_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Its hammer time"
+			tasks: [{
+				id: "4CD4512146090290"
+				item: {
+					Count: 1b
+					id: "exdeorum:wooden_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Hammah"
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"23C6434131950A67"
+				"0D85C41FAF677E85"
+			]
+			description: [
+				"Just place some cobble down and break it with a hammer to get gravel"
+				""
+				"&a&lTip:&r&r Use effortless building to help you place down alot of blocks and use FTB Ultimine to break the blocks"
+			]
+			hide: true
+			id: "64350E5E120DB402"
+			rewards: [{
+				count: 16
+				id: "1090E8ED67CF8AB2"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02F110D6F25E4C23"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["730EAA1DF5563794"]
+			description: ["More pebbles, are you kidding me"]
+			hide: true
+			id: "5422231CD2A8162A"
+			rewards: [{
+				count: 32
+				id: "17837384EBB26BC1"
+				item: "exdeorum:deepslate_pebble"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2951D122DD1BE409"
+				item: "exdeorum:deepslate_pebble"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5422231CD2A8162A"]
+			description: ["Same as cobblestone, use the pebbles to craft some deepslate"]
+			hide: true
+			id: "5F777074E40061A6"
+			rewards: [{
+				count: 32
+				id: "087ED68DC506C6C1"
+				item: "minecraft:deepslate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A172BCA1FA50B36"
+				item: "minecraft:cobbled_deepslate"
+				type: "item"
+			}]
+			title: "That is deep..."
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5F777074E40061A6"]
+			description: ["Same as cobblestone, crush some deepslate"]
+			hide: true
+			id: "42E504C40B8AE137"
+			rewards: [
+				{
+					count: 16
+					id: "05D674C15533DB56"
+					item: "gtceu:crushed_iron_ore"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5A1599FC0CDF01DA"
+					item: "gtceu:crushed_cassiterite_ore"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3FDF01F2E37E163B"
+					item: "gtceu:crushed_copper_ore"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7AA79DA1830BE07C"
+					item: "gtceu:crushed_sphalerite_ore"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6F2E4107C668DE0F"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			subtitle: "Some crazy deja vu"
+			tasks: [{
+				id: "45E3A20C8148D5F8"
+				item: "exdeorum:crushed_deepslate"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["64350E5E120DB402"]
+			description: ["Place some gravel down and break it with a hammer "]
+			hide: true
+			id: "5BC235C1F6CB09D5"
+			rewards: [{
+				count: 16
+				id: "055870581D073455"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CD0C4BD7D8E8CC4"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BC235C1F6CB09D5"]
+			description: ["Place some sand down and break it with a hammer"]
+			hide: true
+			id: "337D2159B44EA044"
+			rewards: [{
+				count: 16
+				id: "72B067705355BD76"
+				item: "exdeorum:dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F154846B5EA09ED"
+				item: "exdeorum:dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1538CA8318B04B73"]
+			description: [
+				"Compost organices for bonemeal "
+				"-Some scientist (probably)"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "12DE6A603E2145AD"
+			tasks: [{
+				id: "4075FAA7E4C76BDB"
+				item: "minecraft:composter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["12DE6A603E2145AD"]
+			description: ["Remember when I said you can compost bamboo for bonemeal? This is the reason"]
+			hide: true
+			id: "3569C20476983715"
+			rewards: [{
+				count: 8
+				id: "50985A56DAB6DE52"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CEE48CC2383C47E"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"45E64440F2013B2C"
+				"3569C20476983715"
+			]
+			description: ["Mix and not match some clay and bonemeal"]
+			hide: true
+			id: "4A7D903D9D8E87DC"
+			rewards: [{
+				count: 4
+				id: "1D6D76F1631C95F8"
+				item: "exdeorum:porcelain_clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "368A68DFEAFCF76B"
+				item: "exdeorum:porcelain_clay_ball"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"337D2159B44EA044"
+				"7B9EB9CFC181515A"
+			]
+			description: ["You know that barrel that you had to make dirt? Well now fill it with water and shove some dust in there to get clay"]
+			hide: true
+			id: "729FEF585302023C"
+			rewards: [{
+				count: 4
+				id: "37F07EAD035E4F47"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			subtitle: "Finally something different"
+			tasks: [{
+				id: "64D7A8C184B547C3"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["729FEF585302023C"]
+			description: ["&oBreak some clay&r"]
+			hide: true
+			id: "45E64440F2013B2C"
+			rewards: [{
+				count: 8
+				id: "3D762787F94BFAF9"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "005DEE7043187B37"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4A7D903D9D8E87DC"]
+			description: ["Craft the porcelain clay like you would with &mcauldron&r upside down pants"]
+			hide: true
+			id: "0F2D35DF55B3D4A9"
+			subtitle: "How's the job?"
+			tasks: [{
+				id: "6D0FCAFF5EE97422"
+				item: "exdeorum:unfired_porcelain_crucible"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0F2D35DF55B3D4A9"]
+			description: ["Smelt the unfired crucible to get &mfired&r porcelain crucible"]
+			hide: true
+			icon: "exdeorum:porcelain_crucible"
+			id: "3E4AD597DC4FD232"
+			subtitle: "Well he used to be fired"
+			tasks: [
+				{
+					id: "45E70ECDDD0C87E3"
+					item: "exdeorum:porcelain_crucible"
+					type: "item"
+				}
+				{
+					id: "5026E80666785DF6"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1538CA8318B04B73"]
+			description: ["You can make an oak crucible and put oragnics in it and it will slowly turn into water, You wont need it for long since you can make an infinite source once you get 2 buckets of water"]
+			hide: true
+			hide_dependency_lines: true
+			id: "0E24BC59BFE12B39"
+			rewards: [{
+				id: "6FB8A9A6963FAAF1"
+				item: "exdeorum:oak_crucible"
+				type: "item"
+			}]
+			tasks: [{
+				id: "116B3AA280549DEE"
+				item: "exdeorum:oak_crucible"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["42E504C40B8AE137"]
+			description: ["OMG more, this is getting out of hand"]
+			hide: true
+			id: "6B4D795FBF5CB970"
+			rewards: [{
+				count: 32
+				id: "418A545A741DF59E"
+				item: "exdeorum:blackstone_pebble"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23AC7A476875B5BA"
+				item: "exdeorum:blackstone_pebble"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["42E504C40B8AE137"]
+			description: ["Sift some deepslate to get crushed iron "]
+			hide: true
+			id: "4F252AD8122D6469"
+			tasks: [{
+				id: "3917660C712E0482"
+				item: "gtceu:crushed_iron_ore"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4F252AD8122D6469"]
+			description: ["Smelt the crushed iron in the ye ol' furnace for our beloved shiny ingot"]
+			hide: true
+			id: "3123147091ECDE3B"
+			rewards: [{
+				count: 16
+				id: "2EC135AA78BB8030"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25514ABFDA71524D"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["42E504C40B8AE137"]
+			description: ["Siveing crushed deepslate will yield you some cassiterite"]
+			hide: true
+			id: "6676937A2EB0D26C"
+			subtitle: "casserole my beloved"
+			tasks: [{
+				id: "0D9EDA54965DD22D"
+				item: "gtceu:crushed_cassiterite_ore"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6676937A2EB0D26C"]
+			description: ["Tin is obtained from smelting cassiterite"]
+			hide: true
+			id: "6C04CDF040A929B0"
+			rewards: [{
+				count: 16
+				id: "36ED22D7ED341F0D"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			subtitle: "Can"
+			tasks: [{
+				id: "0E3419BD422F6B59"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["42E504C40B8AE137"]
+			description: ["Siveing crushed deepslate will yield you some copper"]
+			hide: true
+			id: "28CEF9C6B4231626"
+			tasks: [{
+				id: "087F3F7EC26A3DC6"
+				item: "gtceu:crushed_copper_ore"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["28CEF9C6B4231626"]
+			description: ["Copper will be used in some alloys you will need now"]
+			hide: true
+			id: "665E5445CFF717CF"
+			rewards: [{
+				count: 16
+				id: "39378761CD641DA8"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65AB896F9DACE9E6"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["42E504C40B8AE137"]
+			description: ["Siveing crushed deepslate will yield you some sphalerite"]
+			hide: true
+			id: "5AF9392D11D32AEA"
+			tasks: [{
+				id: "25E7EEC27AE05E14"
+				item: "gtceu:crushed_sphalerite_ore"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5AF9392D11D32AEA"]
+			description: ["Zinc is obtained from smelting sphalerite "]
+			hide: true
+			id: "364B58B97EC40B5A"
+			rewards: [{
+				count: 16
+				id: "1B88F2117A9F4EF7"
+				item: "gtceu:zinc_ingot"
+				type: "item"
+			}]
+			subtitle: "Dont forget to eat some mushrooms"
+			tasks: [{
+				id: "7C1B33202D8F1B28"
+				item: "gtceu:zinc_ingot"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42E504C40B8AE137"]
+			description: ["Redstone isnt that useful right now besides its use for red alloy"]
+			hide: true
+			id: "66B36EBCB3F130D9"
+			rewards: [{
+				count: 16
+				id: "4F208B680A464484"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "The reddest of stones"
+			tasks: [{
+				id: "4C40F28210ECAC96"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3123147091ECDE3B"]
+			description: ["Liquid holder 3000"]
+			hide: true
+			id: "57F5505CA46CD95A"
+			rewards: [{
+				count: 3
+				id: "223FB233D4D4452A"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "\"Dear god\""
+			tasks: [{
+				id: "54D0E6157E2FE38C"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"0E24BC59BFE12B39"
+				"57F5505CA46CD95A"
+			]
+			description: ["You should probably get and infinite source of water before you continue"]
+			hide: true
+			id: "7B9EB9CFC181515A"
+			tasks: [{
+				id: "489CD0571799B4E4"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3E4AD597DC4FD232"]
+			description: [
+				"Place a heat source under your crucible and put some cobblestone in there and bam just like that you have lava"
+				""
+				"&9&lNote:&r&r Soul fire is the best heating source, but to get it you need sould soul which requires lava + soul sand in a stone barrel"
+			]
+			hide: true
+			id: "274E97888D68B115"
+			subtitle: "Thats hot ;)"
+			tasks: [{
+				id: "34AE15C26A4B55BF"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["274E97888D68B115"]
+			description: ["You are going to need a lot of cobblestone"]
+			hide: true
+			id: "43DD781C1D5A712F"
+			rewards: [{
+				count: 32
+				id: "2F7D6908B6932CCD"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "6F34E9B39E0863FD"
+				item: { Count: 16b, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			title: "Finally a cobble gen..."
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6B4D795FBF5CB970"]
+			description: ["This is becoming the new norm, craft some blackstone from its redpective pebble"]
+			hide: true
+			id: "5F9C09FAA6F19626"
+			rewards: [{
+				count: 16
+				id: "0A7B12B50947768A"
+				item: "minecraft:blackstone"
+				type: "item"
+			}]
+			subtitle: "Cobblestones younger brother"
+			tasks: [{
+				id: "5C5A21DF388E6589"
+				item: "minecraft:blackstone"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5F9C09FAA6F19626"]
+			description: ["More crushing of your victims"]
+			hide: true
+			id: "41E98A1C4B71944A"
+			rewards: [
+				{
+					count: 8
+					id: "1C8C82A67ED609B7"
+					item: "gtceu:crushed_stibnite_ore"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1983E368E8FF685D"
+					item: "gtceu:crushed_galena_ore"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "484E064E194855DF"
+					item: "gtceu:sulfur_dust"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E7C206A0B8CEF1F"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "559DB96BA488BCC1"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "12B961263E795698"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			subtitle: "Now in crushed version"
+			tasks: [{
+				id: "3E9141FA051D0D02"
+				item: "exdeorum:crushed_blackstone"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41E98A1C4B71944A"]
+			description: ["Obtained from sieving crushed blackstone"]
+			hide: true
+			id: "5A8E6C9A958E127E"
+			rewards: [{
+				count: 8
+				id: "440B1375565E9483"
+				item: "gtceu:crushed_stibnite_ore"
+				type: "item"
+			}]
+			subtitle: "More like stubmytoenite (amIright)"
+			tasks: [{
+				id: "0E7585A4203B57DB"
+				item: "gtceu:crushed_stibnite_ore"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A8E6C9A958E127E"]
+			description: ["Not that useful at this very moment"]
+			hide: true
+			id: "641BDBD903BAC3E2"
+			rewards: [{
+				count: 4
+				id: "5B605E7EDD499266"
+				item: "gtceu:antimony_ingot"
+				type: "item"
+			}]
+			subtitle: "Yeah, don't moan"
+			tasks: [{
+				id: "172C427947137095"
+				item: "gtceu:antimony_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41E98A1C4B71944A"]
+			description: ["Obtained from sieving crushed blackstone"]
+			hide: true
+			id: "24EF7E847021F033"
+			rewards: [{
+				count: 8
+				id: "1BD2169FE1BE21C8"
+				item: "gtceu:crushed_galena_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "645681B8ECDA418C"
+				item: "gtceu:crushed_galena_ore"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24EF7E847021F033"]
+			hide: true
+			id: "0631BC1F7CAB9B0D"
+			rewards: [{
+				count: 8
+				id: "3AA97892A9CF65D8"
+				item: "gtceu:lead_ingot"
+				type: "item"
+			}]
+			subtitle: "Not suitable for consumption"
+			tasks: [{
+				id: "56290BEA4658704E"
+				item: "gtceu:lead_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["41E98A1C4B71944A"]
+			description: ["Used in the making of rubber "]
+			hide: true
+			id: "2554747D685F6600"
+			rewards: [{
+				count: 8
+				id: "5A9F6D18631AF059"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			subtitle: "Do not breath in"
+			tasks: [{
+				id: "3D25BFE23746D1CF"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41E98A1C4B71944A"]
+			description: ["Obtained from sieving crushed blackstone"]
+			hide: true
+			id: "230E4CCF21039972"
+			rewards: [{
+				count: 8
+				id: "6B4FB6DE739D76B3"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			subtitle: "Very bright"
+			tasks: [{
+				id: "4AF277F39F96B246"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["41E98A1C4B71944A"]
+			description: ["Obtained from sieving crushed blackstone"]
+			hide: true
+			id: "228ACE9BC17B0BC3"
+			rewards: [{
+				count: 8
+				id: "2F67711380C2A565"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			subtitle: "Sharp"
+			tasks: [{
+				id: "5DEB0F272AD21926"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64350E5E120DB402"]
+			description: ["If you did not know, you can mix 2 gravel and 2 dirt together to get 4 coarse dirt, which you can then sift the coarse dirt to get 4 pieces of dirt and and a chance of more "]
+			hide: true
+			id: "58B6F274D5C866B2"
+			subtitle: "Finally taking the easy route"
+			tasks: [{
+				id: "5A28CAA8B864348E"
+				item: "minecraft:coarse_dirt"
+				type: "item"
+			}]
+			title: "Duping dirt like the cheater you are..."
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2DDD2E9818B3051A"]
+			description: ["You will need alot of this stuff going into LV, so make sure you stock up "]
+			hide: true
+			id: "3F041A9251D5B250"
+			rewards: [{
+				count: 8
+				id: "2BD3C03F37834291"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4704140843BED0B6"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["730EAA1DF5563794"]
+			description: ["Even more pebbles, This has to be a joke"]
+			hide: true
+			hide_dependency_lines: true
+			id: "5AD68E29837F9F58"
+			rewards: [{
+				count: 32
+				id: "43D6B670F1D58068"
+				item: "exdeorum:andesite_pebble"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5C9AEC706C2EBF"
+				item: "exdeorum:andesite_pebble"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5AD68E29837F9F58"]
+			description: ["Andesite isnt used for much beside create"]
+			hide: true
+			id: "742A19E4F88733CB"
+			rewards: [{
+				count: 8
+				id: "032866B1ED118355"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			subtitle: "Andy?"
+			tasks: [{
+				id: "5B11417B2D45AF49"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"742A19E4F88733CB"
+				"3123147091ECDE3B"
+			]
+			description: ["You can use either iron nuggets ore zinc nuggets to make andesite alloy"]
+			hide: true
+			id: "51B6FCD8F9791CE7"
+			rewards: [{
+				count: 8
+				id: "094CA9130851192C"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FEB38C5315AEC71"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["51B6FCD8F9791CE7"]
+			description: ["The small water wheel spins faster then the large water wheel but the large water wheel will give you more stress "]
+			hide: true
+			id: "67BC5C07904932D4"
+			rewards: [{
+				id: "1D1EEAD3C5ED4AED"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			subtitle: "You spin me right round"
+			tasks: [{
+				id: "051020A8342254B2"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["67BC5C07904932D4"]
+			description: ["The create will need quite a bit of speed to run, The next quest will go into more detail"]
+			hide: true
+			icon: "create:mechanical_mixer"
+			id: "1F4C1450D74103B1"
+			subtitle: "Need for speed"
+			tasks: [
+				{
+					id: "5A744C50AAEBA4FB"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "3D501B85ABFF4F67"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "25768A63642EA5C6"
+					item: "createlowheated:basic_burner"
+					type: "item"
+				}
+				{
+					id: "6F2CCB76DC4C43D0"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1F4C1450D74103B1"]
+			description: [
+				"The regular waterwheel spins at 8 RPM, which is not enough to power the mechanical mixer. To increase the speed at this stage you will have to use gear ratios."
+				"Connect a large cog to the waterwheel shaft. Connect now a small gear to the side of the large cog. Congratulations! You now doubled the speed! Repeat one more time and you can now power the mechanical mixer."
+				"Us the gearboxes to change the rotation direction."
+			]
+			hide: true
+			icon: "create:large_cogwheel"
+			id: "5155DE2DD7749A31"
+			tasks: [
+				{
+					id: "0A0FCB4B7C7B9AAD"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "7A1358EA76B24908"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "616411486327C933"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+			]
+			title: "Increasing the speed"
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"665E5445CFF717CF"
+				"6C04CDF040A929B0"
+				"1F4C1450D74103B1"
+			]
+			description: ["Mixing copper and tin in a create mixer will get you bronze"]
+			hide: true
+			id: "087F6F9C3D04BC24"
+			rewards: [{
+				count: 8
+				id: "368CBF4B38437DD7"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CAAE1957204F5A7"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"364B58B97EC40B5A"
+				"665E5445CFF717CF"
+				"1F4C1450D74103B1"
+			]
+			description: ["Mixing zinc and copper in a create mixer will get you some brass"]
+			hide: true
+			id: "437CB9DCAF8742F3"
+			rewards: [{
+				count: 8
+				id: "0A43D58C7F9B3C8E"
+				item: "gtceu:brass_ingot"
+				type: "item"
+			}]
+			subtitle: "Off-brand gold"
+			tasks: [{
+				id: "70F85862D1627D99"
+				item: "gtceu:brass_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["437CB9DCAF8742F3"]
+			description: ["Once in LV create will become optional "]
+			hide: true
+			icon: "create:deployer"
+			id: "3FBA3A66907BE1B7"
+			subtitle: "Plonk, Plonk, Plonk"
+			tasks: [{
+				id: "680E913FE1C25AE5"
+				title: "Thurther progression into Create..."
+				type: "checkmark"
+			}]
+			title: "Further progression into create"
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3123147091ECDE3B"]
+			description: [
+				"To obtain wrought iron early game you need to smelt iron nuggets in a furnace to get wrought iron nuggets which you can then use to make wrought iron ingots"
+				""
+				"&9&lNote:&r&r You will unlock better ways to get wrought iron in LV"
+			]
+			hide: true
+			id: "4A188005B75236B4"
+			rewards: [{
+				count: 63
+				id: "3CCA3D2BD0E3A6BC"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			subtitle: "Dont worry, Everyone gets confused"
+			tasks: [{
+				id: "4D527EBDF404D30A"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4A188005B75236B4"]
+			description: ["The reason we are suggesting wrought iron tools instead of normal iron is because wrought iron has almost double the durability"]
+			hide: true
+			id: "44ED3A21327DBA92"
+			rewards: [{
+				count: 8
+				id: "0146A671BCFA33E5"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			subtitle: "Finally, Some greg"
+			tasks: [
+				{
+					id: "0D12D1BF8DB9BD5C"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BA7CC3ED65CE9E4"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A40A3447F8A8FE3"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0FE64501D35DA2F4"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2BF2CF0BC841D263"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B3ED0514191D242"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_knife"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 2.0f
+								AttackSpeed: 2.8f
+								Damage: 0
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "286A496AB4D6A15D"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_mortar"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 0.0f
+								AttackSpeed: -2.6000001f
+								Damage: 0
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FCECF73EE363A76"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63FC36BC09B1CD9B"
+					item: {
+						Count: 1b
+						id: "gtceu:wood_mallet"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Tools"
+			x: 7.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["44ED3A21327DBA92"]
+			description: ["You will only need 1 of these for your adventure"]
+			hide: true
+			id: "6400DBF094A72A5B"
+			tasks: [{
+				id: "27F9BFB8BF2DDF02"
+				item: "gtceu:brick_wooden_form"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["45E64440F2013B2C"]
+			description: ["Smelt some clay to get bricks"]
+			hide: true
+			hide_dependency_lines: true
+			id: "42755AF8E466E0D2"
+			rewards: [{
+				count: 16
+				id: "51D109CE96EFC902"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EA429F31DFDEE0D"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["42755AF8E466E0D2"]
+			description: ["Craft your bricks into blocks"]
+			hide: true
+			id: "4247AC043C5D4101"
+			rewards: [{
+				count: 32
+				id: "0393E4DA64144423"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4864E3B167598ADC"
+				item: "minecraft:bricks"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"4247AC043C5D4101"
+				"286A496AB4D6A15D"
+			]
+			description: ["Crush brick blocks for crushed brick"]
+			hide: true
+			id: "7A825A103C86FD86"
+			rewards: [{
+				count: 8
+				id: "333A0C67BFD5AA4E"
+				item: "gtceu:brick_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1452EF96134D5A9A"
+				item: "gtceu:brick_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"729FEF585302023C"
+				"286A496AB4D6A15D"
+			]
+			description: ["Using your mortor, crush some clay blocks into crushed clay"]
+			hide: true
+			hide_dependency_lines: true
+			id: "39C5AFDF94744956"
+			rewards: [{
+				count: 4
+				id: "4AD15328FB8C256E"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5EB569CB3188AC1A"
+				item: "gtceu:clay_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"39C5AFDF94744956"
+				"7A825A103C86FD86"
+			]
+			description: ["Mix your crushed clay and brick in a crafting table for fireclay"]
+			hide: true
+			id: "325AB8AA6F5B79E2"
+			rewards: [{
+				count: 16
+				id: "5CC682F84FA6D37C"
+				item: "gtceu:fireclay_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2098E8A8C9F9FF35"
+				item: "gtceu:fireclay_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0490947ED47086E5"]
+			description: ["Smelt your compressed clay for firebricks"]
+			hide: true
+			id: "2670D67AC2DE486F"
+			rewards: [{
+				count: 8
+				id: "7F27C9B8FD48F1AC"
+				item: "gtceu:firebrick"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7173D41D7643E918"
+				item: "gtceu:firebrick"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"6400DBF094A72A5B"
+				"005DEE7043187B37"
+			]
+			description: ["Use your wooden brick form and mix some clay and sand for compressed coke clay"]
+			hide: true
+			id: "3AC3D33A5E38E01C"
+			rewards: [
+				{
+					count: 6
+					id: "19C11A46E8D0BCCB"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "07A555E8E6CCD289"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "297FFC54AC0A6B25"
+				item: "gtceu:compressed_coke_clay"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"325AB8AA6F5B79E2"
+				"6400DBF094A72A5B"
+			]
+			description: ["Surround your brick wooden form with the fireclay to get compressed clay"]
+			hide: true
+			id: "0490947ED47086E5"
+			rewards: [{
+				count: 8
+				id: "14CC09EDB14F06A6"
+				item: "gtceu:compressed_fireclay"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66D898AB117837B7"
+				item: "gtceu:compressed_fireclay"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["3AC3D33A5E38E01C"]
+			description: ["Smelt your compressed coke clay into coke oven bricks"]
+			hide: true
+			id: "204C2D16A0915DD0"
+			rewards: [{
+				count: 8
+				id: "167D24E229B7FF59"
+				item: "gtceu:coke_oven_brick"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16C86060C4F0303B"
+				item: "gtceu:coke_oven_brick"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["204C2D16A0915DD0"]
+			description: ["Repeat the last few steps until you have enough for 1 coke oven"]
+			hide: true
+			icon: "gtceu:coke_oven"
+			id: "17E5856DDABF15E1"
+			tasks: [
+				{
+					id: "593A40CC91D73272"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "7DA68951ABC0C90F"
+					item: { Count: 25b, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["17E5856DDABF15E1"]
+			description: ["Put some logs onto the coke oven and wait until you have some creosote, You wont have to wait to long"]
+			hide: true
+			id: "06D9B0D9149550FF"
+			tasks: [{
+				id: "523DAC4F17097B29"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"4C40F28210ECAC96"
+				"65AB896F9DACE9E6"
+			]
+			description: ["Mix some copper and redstone in a low heated create mixer to get red alloy"]
+			hide: true
+			id: "20391EBEA2BDFBAD"
+			rewards: [{
+				count: 8
+				id: "476570B90B20DA6A"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4905B9297B6D1C42"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"20391EBEA2BDFBAD"
+				"0FE64501D35DA2F4"
+			]
+			description: [
+				"For now you need to turn the red alloy into plates and then use wire cutters to make wires"
+				""
+				"&9&lNote:&r&r Once in LV you will get the wiremill machine that will turn ingots into wires at a 1:2 ratio"
+			]
+			hide: true
+			id: "177D1ED581A4FFE2"
+			rewards: [{
+				count: 8
+				id: "7493BF4337D0594B"
+				item: "gtceu:red_alloy_single_wire"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6716EBF20B9AC3A0"
+				item: "gtceu:red_alloy_single_wire"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"3F041A9251D5B250"
+				"0D12D1BF8DB9BD5C"
+			]
+			description: ["With the sticky resin, you can now make rubber sheets which will be used to cover your cables until you get an assembler, which will use liquid rubber"]
+			hide: true
+			id: "6BBA77E432C09D06"
+			rewards: [{
+				count: 8
+				id: "0C85F61148612564"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			subtitle: "Not good for burning"
+			tasks: [{
+				id: "1B30652018D15082"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"177D1ED581A4FFE2"
+				"1B30652018D15082"
+			]
+			description: ["Use some of those rubber sheets to make some cable"]
+			hide: true
+			id: "233F55E5714BE41E"
+			tasks: [{
+				id: "46E514158FD199FF"
+				item: "gtceu:red_alloy_single_cable"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["233F55E5714BE41E"]
+			description: ["Using some of the wrought iron you made, make a ULV machine hull"]
+			hide: true
+			id: "4880D5928133733E"
+			rewards: [{
+				id: "2D67143A3CB8E2AD"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1EF4C97A60019DE4"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["06D9B0D9149550FF"]
+			description: ["With some buckets of creosotes you can surround the bucket with planks to get treated wood"]
+			hide: true
+			id: "415B40C3575B5DCF"
+			tasks: [{
+				id: "25EBEE60C27E8D56"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"415B40C3575B5DCF"
+				"4880D5928133733E"
+			]
+			description: [
+				"As the name suggests the large farm will farm crops for you"
+				""
+				"&9&lNote:&r&r You can use different types of fertilizer to speed it up and get more crops out of a single operation"
+			]
+			hide: true
+			icon: "gtceu:large_farm"
+			id: "60F3B1C5C37BF4BD"
+			optional: true
+			tasks: [
+				{
+					id: "07243D0ABE31C322"
+					item: "gtceu:large_farm"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "0DE0658CB6558549"
+					item: { Count: 13b, id: "gtceu:treated_wood_planks" }
+					type: "item"
+				}
+				{
+					id: "2E352A0D671811F0"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "1534E1943392C7CA"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "44EF5EA818FDC975"
+					item: { Count: 8b, id: "minecraft:dirt" }
+					type: "item"
+				}
+				{
+					id: "4CD48D8C6980949E"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "4228BFD05E7BF17D"
+					item: { Count: 20b, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"415B40C3575B5DCF"
+				"4880D5928133733E"
+			]
+			description: [
+				"Withe the large barrel you can make an assortment of things"
+				""
+				"Most notable being very fast clay and slime blocks"
+			]
+			hide: true
+			icon: "gtceu:large_barrel"
+			id: "321F490F789C4712"
+			optional: true
+			tasks: [
+				{
+					id: "3887985D74539B94"
+					item: "gtceu:large_barrel"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "19EF814BCD751CE6"
+					item: { Count: 9b, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "4B48701DD2141F67"
+					item: { Count: 19b, id: "gtceu:treated_wood_planks" }
+					type: "item"
+				}
+				{
+					id: "74B9267B080FA3AA"
+					item: "gtceu:ulv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "013ECCC7BF940258"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "3C959ADB519D2F39"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
+					id: "1C16F74BC3C19BA7"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"415B40C3575B5DCF"
+				"4880D5928133733E"
+			]
+			description: ["With the large stone barrel, you can get pebbles by mixing lava and water, some recpies may use different liquids and items"]
+			hide: true
+			icon: "gtceu:large_stone_barrel"
+			id: "1B8AFB422B52CCB2"
+			subtitle: "Endless pebbles"
+			tasks: [
+				{
+					id: "3CBF2B84C665A7EB"
+					item: "gtceu:large_stone_barrel"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "74CC1354762F5E18"
+					item: { Count: 9b, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "00A0689FD81FD3A8"
+					item: { Count: 19b, id: "minecraft:stone" }
+					type: "item"
+				}
+				{
+					id: "3F978AEB396B63AB"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "13DC1CF334B09853"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
+					id: "2BD20A4012204A7F"
+					item: "gtceu:ulv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "640DEE81CB765A48"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["3123147091ECDE3B"]
+			description: [
+				"Big boy chests"
+				""
+				"&9&lNote:&r&r Dont make this chest to big if you have a poor preformance PC or your computer will take off"
+			]
+			hide: true
+			icon: "colossalchests:uncolossal_chest"
+			id: "6864A3D58FF70B63"
+			rewards: [{
+				id: "2F2E6681BF28B237"
+				item: "colossalchests:upgrade_tool"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "178BB3B62AB995DA"
+					item: "colossalchests:colossal_chest_wood"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "400B8A78C616D637"
+					item: { Count: 25b, id: "colossalchests:chest_wall_wood" }
+					type: "item"
+				}
+			]
+			title: "Colossal Chests"
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2670D67AC2DE486F"]
+			description: ["Now do the last steps all over again untill you have enough for a full primitive blast furnace"]
+			hide: true
+			icon: "gtceu:primitive_blast_furnace"
+			id: "2E6EB010C721828E"
+			tasks: [
+				{
+					id: "00322A060B81504F"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3A2D676EDAF27A02"
+					item: { Count: 32b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2E6EB010C721828E"]
+			description: ["Woo Whoo, You now have steel, you are going to need alot of it so make either more PBFs or go afk over night its your choice"]
+			hide: true
+			id: "04D75709E17FD899"
+			rewards: [{
+				count: 4
+				id: "1F709924600167D6"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			subtitle: "GregTech aka waiting simulator"
+			tasks: [{
+				id: "75292210D1F45A78"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["44ED3A21327DBA92"]
+			description: [
+				"If you dont like taking the quick route, we have a perfect solution just for you."
+				""
+				"Using the arboreal extractor on any grown tree, it will extract latex from the logs"
+				""
+				"&9&lNote:&r&r Jungle wood is the only wood you can extract latex from"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "1B60F3205751EF83"
+			rewards: [{
+				id: "2CBC6C777F4CA1DB"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A75363E654D8629"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			title: "Alternative rubber route"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1B60F3205751EF83"]
+			description: ["Its going to take some time to get latex so go do some other things in the mean time"]
+			hide: true
+			id: "69468A787BE44437"
+			subtitle: "Liquid butter"
+			tasks: [{
+				id: "5DA2136024D70C20"
+				item: "thermal:latex_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["69468A787BE44437"]
+			description: ["Now that you have liquid rubber in a bucket, just put it in a crafting table to get &mforbidden butter&r latex"]
+			hide: true
+			id: "4A2DDC3EB89FEB11"
+			subtitle: "Forbidden butter"
+			tasks: [{
+				id: "58D821F92B45CAD0"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4A2DDC3EB89FEB11"]
+			description: [
+				"With the latex, you need to mix it with sulfur in a create mixing basin to get cured rubber"
+				""
+				"Dont forget about the speed needed for the mixer to work"
+			]
+			hide: true
+			id: "701D74624E84B142"
+			rewards: [{
+				count: 16
+				id: "7672473D6B942804"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			subtitle: "Not good for enviroment"
+			tasks: [{
+				id: "7B205A2D5007A652"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["41E98A1C4B71944A"]
+			hide: true
+			id: "54E6BBE17EA76BEA"
+			rewards: [{
+				count: 4
+				id: "43414074F0A7B3CB"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D387F202FF4F1BC"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			title: "The power to teleport"
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["54E6BBE17EA76BEA"]
+			description: ["Can be used to help you in your sifting journey"]
+			hide: true
+			id: "165685BB69363BFF"
+			subtitle: "Sucks nicely ;)"
+			tasks: [{
+				id: "70403333B4E7B3DB"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			title: "Gotta catch 'em all!"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"087F6F9C3D04BC24"
+				"0D12D1BF8DB9BD5C"
+			]
+			description: ["This thing is really useful for early game automation since it can auto pull and push fluids"]
+			hide: true
+			id: "39F800B26B0B5D30"
+			tasks: [{
+				id: "781592675D2D69E1"
+				item: {
+					Count: 1b
+					id: "thermal:fluid_cell"
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								Amount: 0
+								Capacity: 32000
+								FluidName: "minecraft:empty"
+								Tank: 0b
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Highly capable drum!"
+			x: 12.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["274E97888D68B115"]
+			description: ["As the name suggests, you can thow all your trash in here and it will be void, lost to time"]
+			hide: true
+			id: "6F98BE884AF0DF9E"
+			tasks: [{
+				id: "1B8F882C272F4857"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			title: "Take out the trash"
+			x: 0.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0631BC1F7CAB9B0D"]
+			description: ["Needs to be surrounded by at least 2 water sources to run, it will give you infinte water to pump to your machines"]
+			hide: true
+			id: "3CD9A4203A29347A"
+			subtitle: "Also sucks nicely ;)"
+			tasks: [{
+				id: "63A28F4F2D4ECEA7"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			title: "Water made easy"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["17E5856DDABF15E1"]
+			description: ["With the coke oven hatch, you can automate the insertion of logs or charcoal and it will push all fluids into pipes or tanks that are next to it"]
+			hide: true
+			id: "2872BB4B08279EB6"
+			optional: true
+			tasks: [{
+				id: "51CC2D0C421A77F3"
+				item: "gtceu:coke_oven_hatch"
+				type: "item"
+			}]
+			title: "Automation, now, already!?!?"
+			x: 12.0d
+			y: 17.0d
+		}
+	]
+	title: "ULV"
+}

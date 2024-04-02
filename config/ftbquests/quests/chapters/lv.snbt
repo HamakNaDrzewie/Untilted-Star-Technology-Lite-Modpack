@@ -1,0 +1,2187 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv"
+	group: "6AEA88730D2C50F5"
+	id: "24B1A3FE9532E774"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"04D75709E17FD899"
+				"02B381DBE11D4489"
+			]
+			description: ["This block is the core of all machines, you will need one to craft any LV machine"]
+			hide: true
+			id: "25958A19806D1694"
+			rewards: [{
+				id: "06084E4A2AB50EEB"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			subtitle: "The core of all machines, literally"
+			tasks: [{
+				id: "4FAC153E2EC0C188"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1B30652018D15082"
+				"0FE64501D35DA2F4"
+				"0E3419BD422F6B59"
+			]
+			hide: true
+			id: "02B381DBE11D4489"
+			rewards: [{
+				count: 4
+				id: "6E908323EA4A49B0"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			subtitle: "Transmitting power"
+			tasks: [{
+				id: "5E6C457019336BB1"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["25958A19806D1694"]
+			hide: true
+			icon: "gtceu:industrial_primitive_blast_furnace"
+			id: "2CD53ACE92AE503B"
+			tasks: [
+				{
+					id: "74B475F66FBFA7E1"
+					item: "gtceu:industrial_primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 45L
+					id: "16E7D5FC664A0256"
+					item: { Count: 45b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "3ADD242DE6638260"
+					item: { Count: 22b, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3C3BC8580EE0DA62"
+					item: { Count: 10b, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "51DF6121FC95C492"
+					item: { Count: 24b, id: "gtceu:bronze_frame" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "3101D637FB7274DA"
+					item: { Count: 20b, id: "gtceu:steel_frame" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "265722FB860849C8"
+					item: { Count: 2b, id: "gtceu:bronze_pipe_casing" }
+					type: "item"
+				}
+				{
+					id: "072F378DA4043282"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "26748F6EE9FF3107"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "2E2817CAE09362D7"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3C5499802438DB9C"
+					item: { Count: 2b, id: "gtceu:lv_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "1A1143A8FB03A29E"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"04D75709E17FD899"
+				"2BAB6C025D075566"
+			]
+			description: [
+				"With the mechanical hammer, You can automate the process of crushing blocks at the cost of some RF"
+				""
+				"With the mechanical sieve, you can automate the process of sieving"
+			]
+			hide: true
+			id: "3EAFAA76262F4DC4"
+			rewards: [{
+				count: 8
+				id: "671393C6A7A033C7"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			subtitle: "More automation"
+			tasks: [
+				{
+					id: "6F7C088F39631B78"
+					item: "exdeorum:mechanical_hammer"
+					type: "item"
+				}
+				{
+					id: "71270C7A3810B02D"
+					item: "exdeorum:mechanical_sieve"
+					type: "item"
+				}
+			]
+			title: "Automating Sieving"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6777232347E11F1D"]
+			description: [
+				"You can use any burnable item to fuel the stirling dynamo"
+				""
+				"So anything that you can use as a fuel in a furnace can power this dynamo"
+			]
+			hide: true
+			id: "2BAB6C025D075566"
+			rewards: [{
+				id: "68813E694E97FD96"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			subtitle: "Pollution at its finest"
+			tasks: [{
+				id: "4E4DD2C578A84714"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2BAB6C025D075566"
+				"691836EA064E8E07"
+			]
+			description: [
+				"Now there are a few ways to generate electricity to power your industrial revolution"
+				""
+				"You can use the gregtech way and go through the trouble of getting steam "
+				""
+				"The dynamo route (Which I would highly suggest) which can be used to power a converter to get EU from RF/FE"
+				""
+				"Soon, in a future update you will be able to convert SU into EU via a multiblock which will allow for pretty much free power"
+			]
+			hide: true
+			id: "3D071C130159A6DC"
+			rewards: [{
+				count: 4
+				id: "354C5769B9225B16"
+				item: "gtceu:tin_quadruple_cable"
+				type: "item"
+			}]
+			subtitle: "I feel the power"
+			tasks: [{
+				id: "7EE89867070E76E4"
+				item: "gtceu:lv_4a_energy_converter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3D071C130159A6DC"]
+			description: [
+				"In Star Technology Lite, the following conversion happens:"
+				"4 FE/RF -> 1 EU - this requires a converter"
+				"1 EU -> 4 FE/RF - this does not require a converter, so you can just connect the machiens of other mods to GregTech cables."
+			]
+			hide: true
+			icon: "gtceu:energy_detector_cover"
+			id: "19C3EEF8D1477E6A"
+			tasks: [{
+				id: "35716EEAAB79DE3D"
+				title: "Energy Conversion"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"244C1CED28DD12C2"
+				"233F55E5714BE41E"
+				"4079EB4944AC2098"
+				"7264F382183AAA0C"
+			]
+			description: [
+				"Finally after long last, the gate to LV age has been unlocked."
+				""
+				"You might want to make a few of these circuits as you will need quite a bit in the future"
+			]
+			hide: true
+			id: "691836EA064E8E07"
+			rewards: [{
+				count: 4
+				id: "22CE0B3A0CA6A638"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			subtitle: "First LV Circuit"
+			tasks: [{
+				id: "2AD8F29A6D9BB373"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3F041A9251D5B250"
+				"0FE64501D35DA2F4"
+			]
+			description: ["Nice and simple recipe but it will use alot of copper and a bit of sticky resin"]
+			hide: true
+			id: "4079EB4944AC2098"
+			rewards: [{
+				count: 4
+				id: "619BB8F98E7981FC"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			subtitle: "I wish my printer did this"
+			tasks: [{
+				id: "3281B91981798759"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["04D75709E17FD899"]
+			description: ["You will need alot of these for the amount of circuits you eill be crafting"]
+			hide: true
+			id: "7264F382183AAA0C"
+			rewards: [{
+				count: 8
+				id: "22345932CA295557"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			subtitle: "Does not suck :("
+			tasks: [{
+				id: "44FF05BB46138509"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"44ED3A21327DBA92"
+				"3F041A9251D5B250"
+			]
+			description: [
+				"Resistors will use some sticky resin and copper wire."
+				""
+				"To get the charcoal dust you can crush charcoal obtained from the coke oven with a mortor"
+			]
+			hide: true
+			id: "244C1CED28DD12C2"
+			rewards: [{
+				count: 8
+				id: "4A474C3BBCAA5AA2"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			subtitle: "Cannot resist the urge of GregTech"
+			tasks: [{
+				id: "0619EF0FF1C869E4"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["25958A19806D1694"]
+			description: ["You will mainly use this to get gold and nickel early game until you unlock their respective ores via sieving"]
+			hide: true
+			icon: "gtceu:basic_kinetic_ore_factory"
+			id: "6777232347E11F1D"
+			rewards: [{
+				count: 8
+				id: "58AB41FA682AD8C6"
+				item: "gtceu:crushed_copper_ore"
+				type: "item"
+			}]
+			subtitle: "Factory Already?!?!"
+			tasks: [
+				{
+					id: "7470EA672E629CB3"
+					item: "gtceu:basic_kinetic_ore_factory"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "7DE900F3D6746BD5"
+					item: { Count: 12b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+				{
+					id: "6794E58A5CB33734"
+					item: "gtceu:lv_kinetic_input_box"
+					type: "item"
+				}
+				{
+					id: "5431C5C88BFFCD7D"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "78213E0D66A21B31"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "38DC1341B72049C4"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "279574579FD9F12D"
+					item: { Count: 8b, id: "gtceu:bronze_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "4AAE667E725E0EF9"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "Basic Kinetic Ore Factory"
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["25958A19806D1694"]
+			description: ["This multi is optional but it will grant you more byproducts and ores to process"]
+			hide: true
+			icon: "gtceu:kinetic_ore_factory"
+			id: "22536F0DECD768E9"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "3E24D03326A6E1EB"
+				item: "gtceu:crushed_sphalerite_ore"
+				type: "item"
+			}]
+			subtitle: "Better than the basic, but not required..."
+			tasks: [
+				{
+					id: "3A1F34C1FC8FC282"
+					item: "gtceu:kinetic_ore_factory"
+					type: "item"
+				}
+				{
+					count: 60L
+					id: "26093591DA0F9C51"
+					item: { Count: 60b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "11E07752AE49AF97"
+					item: { Count: 4b, id: "gtceu:bronze_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0C1C82351E7EE139"
+					item: { Count: 4b, id: "gtceu:bronze_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "193E6A90D4B8E15D"
+					item: "gtceu:lv_kinetic_input_box"
+					type: "item"
+				}
+				{
+					id: "0986C93C41A9D676"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "38F2EF648B510022"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "05AFA101FFB5A2E4"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3D071C130159A6DC"]
+			description: [
+				"The alloy smelter will alloy you to make alloys (Crazy who would have thought)"
+				""
+				"You can make brass, bronze and red alloy easier and make plenty more alloys that GTCEu provides"
+			]
+			hide: true
+			id: "13C229F2C9352D6B"
+			subtitle: "Mixing but with solids"
+			tasks: [{
+				id: "01BA10A909DDEC17"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			title: "Alloy smelter"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2B06DD44A7548DF6"]
+			hide: true
+			id: "17522E2554849424"
+			rewards: [{
+				count: 4
+				id: "5FDB8133179F9444"
+				item: "enderio:fluid_conduit"
+				type: "item"
+			}]
+			subtitle: "50 mB per transfer"
+			tasks: [{
+				id: "67EE354D33E72205"
+				item: "enderio:fluid_conduit"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["04ED0BDC5A1C50E2"]
+			hide: true
+			id: "01FF7958D50D8DDF"
+			rewards: [{
+				count: 4
+				id: "3F72F07844758503"
+				item: "enderio:pressurized_fluid_conduit"
+				type: "item"
+			}]
+			subtitle: "100 mB per transfer"
+			tasks: [{
+				id: "66A87C6716C6C35E"
+				item: "enderio:pressurized_fluid_conduit"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["13C229F2C9352D6B"]
+			hide: true
+			id: "2B06DD44A7548DF6"
+			rewards: [{
+				count: 8
+				id: "30E40712516B5047"
+				item: "enderio:clear_glass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "167DE35DAD62C6E6"
+				item: "enderio:clear_glass"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2B06DD44A7548DF6"]
+			hide: true
+			id: "04ED0BDC5A1C50E2"
+			rewards: [{
+				count: 8
+				id: "700525334EDD8267"
+				item: "enderio:fused_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D9F4F07A2973AC1"
+				item: "enderio:fused_quartz"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["13C229F2C9352D6B"]
+			description: ["Made by mixing silicon and redstone in your new alloy smelter"]
+			hide: true
+			id: "61AC045B4A689201"
+			rewards: [{
+				count: 8
+				id: "3E831A5E5C4AE6BA"
+				item: "gtceu:redstone_alloy_ingot"
+				type: "item"
+			}]
+			subtitle: "No, Not the same as red alloy"
+			tasks: [{
+				id: "7EAB8DD1F62A4EBE"
+				item: "gtceu:redstone_alloy_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["61AC045B4A689201"]
+			description: ["As the name suggests, this will transport redstone signals "]
+			hide: true
+			id: "2457DEC1D404E9BD"
+			rewards: [{
+				count: 4
+				id: "06E6308863E34FD4"
+				item: "enderio:redstone_conduit"
+				type: "item"
+			}]
+			subtitle: "This redstone is floating"
+			tasks: [{
+				id: "265F79077D053E77"
+				item: "enderio:redstone_conduit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["13C229F2C9352D6B"]
+			description: ["Obtained from alloying ender pearls and iron in the alloy smelter"]
+			hide: true
+			id: "3D6C2BDA3E6A4745"
+			rewards: [{
+				count: 4
+				id: "2A4D592F12C6725F"
+				item: "gtceu:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			subtitle: "Wait, did it just move!?"
+			tasks: [{
+				id: "33CCABF3DADD6345"
+				item: "gtceu:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D6C2BDA3E6A4745"]
+			description: [
+				"These are probably the greatest item transportation devices in all of modded minecraft."
+				""
+				"You might be wondering why, since it does not have a great transfer speed even with extraction upgrades"
+				""
+				"If you didnt know you can put multiple different conduits in the same block"
+				""
+				"For example you can place item and fluid conduits in the same block which will alloy for for transportation of both items and fluids in the same block which mean very clean cabling when setting up advanced automation"
+			]
+			hide: true
+			id: "7F40D1793715D17F"
+			rewards: [{
+				count: 8
+				id: "7BD8332CCE8A9B5A"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			subtitle: "G.O.A.T"
+			tasks: [{
+				id: "175605C11CDCF9B2"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["13C229F2C9352D6B"]
+			description: ["There are a few LV super conductors in this pack, but this will probably be your first"]
+			hide: true
+			id: "70C618FBBB479CC3"
+			rewards: [{
+				count: 4
+				id: "0FE6A8B6E4AB6464"
+				item: "gtceu:soul_infused_ingot"
+				type: "item"
+			}]
+			subtitle: "LV Superconductor"
+			tasks: [{
+				id: "5E1181A769E5167B"
+				item: "gtceu:soul_infused_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["70C618FBBB479CC3"]
+			hide: true
+			id: "1085A9CA6E9AE952"
+			rewards: [{
+				count: 4
+				id: "645F62488F3515E4"
+				item: "enderio:lv_energy_conduit"
+				type: "item"
+			}]
+			subtitle: "Transfers 4 LV amps worth of power"
+			tasks: [{
+				id: "14EFE102D3BAB633"
+				item: "enderio:lv_energy_conduit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3123147091ECDE3B"
+				"665E5445CFF717CF"
+				"66B36EBCB3F130D9"
+			]
+			hide: true
+			id: "3387C7BBC13B9CD0"
+			rewards: [{
+				count: 4
+				id: "30B8D65F12F936DE"
+				item: "gtceu:conductive_alloy_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C58707017F3B050"
+				item: "gtceu:conductive_alloy_dust"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3387C7BBC13B9CD0"]
+			hide: true
+			id: "17A548507C0D6186"
+			rewards: [{
+				count: 4
+				id: "22A7AF98B28EE626"
+				item: "gtceu:conductive_alloy_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DCF816175A32609"
+				item: "gtceu:conductive_alloy_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["17A548507C0D6186"]
+			hide: true
+			id: "043FFCD1DDDAE55B"
+			rewards: [{
+				count: 8
+				id: "606C3BBB38A63B96"
+				item: "gtceu:conductive_alloy_single_wire"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46E177E02076DDCD"
+				item: "gtceu:conductive_alloy_single_wire"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["25958A19806D1694"]
+			description: [
+				"You do not need anymore redstone to make magnetic iron rods,"
+				""
+				"With this machine you can magnetize anything"
+			]
+			hide: true
+			id: "39F7FFD2267F6673"
+			rewards: [{
+				count: 4
+				id: "17A48CFDC761F508"
+				item: "gtceu:magnetic_steel_rod"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54BBD9F0BFA52249"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3D071C130159A6DC"]
+			description: [
+				"The motor is a very important componant in all tiers "
+				""
+				"The motor is used in a lot of machines"
+			]
+			hide: true
+			id: "3D629007B6B89F03"
+			rewards: [{
+				count: 2
+				id: "476F851901131428"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			subtitle: "You spin me right round"
+			tasks: [{
+				id: "4AADF31907AA9112"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3D629007B6B89F03"]
+			description: ["With the mixer you can make alloys but in the dust form and can mix fluids together"]
+			hide: true
+			id: "2453536F24B75177"
+			rewards: [{
+				id: "5B30EDE9BDFD59ED"
+				item: "gtceu:tin_rotor"
+				type: "item"
+			}]
+			subtitle: "You spin me right round pt2"
+			tasks: [{
+				id: "342FEF558DE202CA"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D629007B6B89F03"]
+			description: [
+				"The wiremill will alloy you to make wires at a ratio of 1 ingot to 2 wires"
+				""
+				"Isnt that great"
+			]
+			hide: true
+			id: "12D789CB299E4241"
+			rewards: [{
+				count: 8
+				id: "0408EDF89DB3DF10"
+				item: "gtceu:tin_single_wire"
+				type: "item"
+			}]
+			subtitle: "The best machine"
+			tasks: [{
+				id: "490A880926DFADD9"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			title: "Wiremill"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D629007B6B89F03"]
+			description: ["The electric piston is used alot as well in the making of machines"]
+			hide: true
+			id: "71364D33C9E9ABA0"
+			rewards: [{
+				id: "27061CED90A92DBB"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			subtitle: "Dont we have that already?"
+			tasks: [{
+				id: "092EA0F48EB6F953"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["71364D33C9E9ABA0"]
+			description: [
+				"The bending machine will allow you to make plates at a ratio of 1 ingot to 1 plate"
+				""
+				"Isnt that great as well"
+			]
+			hide: true
+			id: "4DACE8CFFBE7DF34"
+			rewards: [{
+				count: 4
+				id: "636F773A0F763364"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			subtitle: "Also the best machine"
+			tasks: [{
+				id: "5B8848BB3E604C40"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["71364D33C9E9ABA0"]
+			description: ["The lathe wll alloy you to make rods at a ratio of 1 ingot to 2 rods"]
+			hide: true
+			id: "0D8B9AF626A1EFB2"
+			rewards: [{
+				count: 8
+				id: "3ABB0B3DB0D04952"
+				item: "gtceu:steel_rod"
+				type: "item"
+			}]
+			subtitle: "Ok we get it there is alot of great machines"
+			tasks: [{
+				id: "79DA06F3DD0C4FFA"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71364D33C9E9ABA0"]
+			description: [
+				"The robot arm and conveyor are used in alot of crafting recipes as well but these 2 have a twist"
+				""
+				"The can be placed on machines, to allow some more advanced automation"
+				""
+				"The conveyor will push and pull items with the addition of filtering options!"
+				""
+				"The robot arm will also push and pull items but it will also allow you to supply an exact amount of items!"
+			]
+			hide: true
+			id: "4E880F379A667C06"
+			subtitle: "Very powerful"
+			tasks: [
+				{
+					id: "02528B47BD0F163F"
+					item: "gtceu:lv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "06C967E181288F5F"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+			]
+			title: "LV Robot Arm and Conveyor Module"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E880F379A667C06"]
+			description: ["The assembler is one of the most important machine of any tier since it alloys you to automate crafting table recipes at a cheaper price"]
+			hide: true
+			id: "49E26CE98AC0E1F3"
+			subtitle: "The Holy Grail"
+			tasks: [{
+				id: "0BCC3DA527C3E4C2"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["49E26CE98AC0E1F3"]
+			description: ["The steel reinforced mesh will allow you to obtain more advanced materials to help you on your journey"]
+			hide: true
+			id: "77D98E1945E99A68"
+			rewards: [{
+				count: 4
+				id: "3E6D122AB2246BDB"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			subtitle: "meshes galore"
+			tasks: [{
+				id: "07EEC69306D72E4F"
+				item: "exdeorum:flint_mesh"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5CADE780292119F2"]
+			description: [
+				"The crafter will allow you to autocraft any crafting table recipe"
+				""
+				"Just put in the recipe in the crafter and supply it with power and the ingredients required and it will craft away"
+			]
+			hide: true
+			id: "52B3339B1DA850D4"
+			rewards: [{
+				id: "6EBE9C0C3F988EEA"
+				item: "enderio:double_layer_capacitor"
+				type: "item"
+			}]
+			subtitle: "Even more automation"
+			tasks: [{
+				id: "32E9459321DF3091"
+				item: "enderio:crafter"
+				type: "item"
+			}]
+			title: "Autocrafting the pebbles"
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0CCEED81E5DE819E"
+				"6777232347E11F1D"
+			]
+			description: [
+				"The Ender IO capacitor is used in alot of ender IO machines and you will need one to put into a machine to run"
+				""
+				"The higher tier the capacitor the faster your machine will run and it will hold more energy"
+			]
+			hide: true
+			id: "5CADE780292119F2"
+			rewards: [{
+				id: "7DB6A8C0E259C0F4"
+				item: "enderio:basic_capacitor"
+				type: "item"
+			}]
+			subtitle: "Power storage? Kinda"
+			tasks: [{
+				id: "6B2613274C728398"
+				item: "enderio:basic_capacitor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["730EAA1DF5563794"]
+			description: ["Grains of infinity is the basis for ender IO, you will need it for alot of things ender IO related"]
+			hide: true
+			id: "0CCEED81E5DE819E"
+			rewards: [{
+				count: 8
+				id: "001ADD1A31E7AE68"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "Bedrock dust?"
+			tasks: [{
+				id: "04AFF8991B86FEA8"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5CADE780292119F2"]
+			description: [
+				"The capacitor can hold a large amount of RF/FE"
+				""
+				"&6&lTip:&r&r Capacitor blocks can act as a multiblock battery which means you can place multiple of the capacitors down, connected to one another and they will connect and create a bigger battery"
+			]
+			hide: true
+			id: "0476CABC93CFBBCF"
+			rewards: [{
+				id: "6FD83E98474B4C06"
+				item: "enderio:octadic_capacitor"
+				type: "item"
+			}]
+			subtitle: "Big storage"
+			tasks: [{
+				id: "0F7AD9108F2C1B76"
+				item: "enderio:basic_capacitor_bank"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"13C229F2C9352D6B"
+				"7470EA672E629CB3"
+			]
+			description: ["Now that you have gold and silver and your trusty alloy smelter, you can now make electrum"]
+			hide: true
+			id: "35ABB18068A30F4B"
+			rewards: [{
+				count: 8
+				id: "7004895F256C7EC4"
+				item: "gtceu:electrum_ingot"
+				type: "item"
+			}]
+			subtitle: "No, it does not contain electricity"
+			tasks: [{
+				id: "657CF3DBB83A1ADA"
+				item: "gtceu:electrum_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["35ABB18068A30F4B"]
+			description: [
+				"This is and alternative to the ender IO capacitors to store power"
+				""
+				"I would suggest the ender IO capacitors due to the fact they are cheaper and can hold more but they can also join together to make a super capacitor"
+			]
+			hide: true
+			id: "292DE398DB75FEC8"
+			rewards: [{
+				id: "5A3C81995E264F0F"
+				item: "thermal:energy_cell_frame"
+				type: "item"
+			}]
+			subtitle: "Weak at the beggining, more powerful as you progress..."
+			tasks: [{
+				id: "055EA0DBEF6130A6"
+				item: {
+					Count: 1b
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Redstone Flux Cell"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["13C229F2C9352D6B"]
+			hide: true
+			id: "26FB597AD60ACC9E"
+			rewards: [{
+				count: 8
+				id: "1359E91EB655F9C0"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0B88F1983E03E39A"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26FB597AD60ACC9E"]
+			hide: true
+			id: "36ED0DDFD5B47E97"
+			rewards: [{
+				id: "5342C47FC64946FF"
+				item: "minecraft:piston"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30CD115DEC14963B"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["292DE398DB75FEC8"]
+			description: [
+				"With these upgrades you can chose weather to upgrade the capacity of the flux cell or the trough put of energy in and out of the cell"
+				""
+				"Or you can do both with one coil"
+			]
+			hide: true
+			id: "3739ED5827734F33"
+			rewards: [{
+				count: 8
+				id: "1362BBF390D0F8D4"
+				item: "gtceu:gold_plate"
+				type: "item"
+			}]
+			subtitle: "More storage?"
+			tasks: [
+				{
+					id: "730B282BF1515D08"
+					item: "thermal:rf_coil_storage_augment"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4FBB851DA5B2C847"
+					item: "thermal:rf_coil_augment"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5869BC201D542676"
+					item: "thermal:rf_coil_xfer_augment"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "First upgrade"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"342FEF558DE202CA"
+				"18ACC2B0F5472634"
+			]
+			description: [
+				"Cobalt brass is obtained by mixing cobalt dust and brass dust with the addition of aluminium dust in a mixer"
+				""
+				"&9&lNote:&r&r Your only source of aluminium at the moment is electrolyzing green sapphire and normal sapphire dust"
+			]
+			hide: true
+			id: "54834F19BCBACB5E"
+			rewards: [{
+				count: 4
+				id: "796609F64372CA75"
+				item: "gtceu:cobalt_ingot"
+				type: "item"
+			}]
+			subtitle: "Noot a normal alloy"
+			tasks: [{
+				id: "0534313BB0C7B624"
+				item: "gtceu:cobalt_brass_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D629007B6B89F03"]
+			description: [
+				"The pumps are like conveyors but instead of items it does fluids"
+				""
+				"&9&lNote:&r&r The fluid regulator is like the robot arm but with fluids"
+			]
+			hide: true
+			id: "74AD631FF3E78E17"
+			rewards: [{
+				id: "13C84D7E1BE97C7C"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			tasks: [{
+				id: "667D09F3744FE643"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["54834F19BCBACB5E"]
+			description: [
+				"The cutter will use 3 different liquids in its recipe"
+				""
+				"&b&lWater:&r&r the slowest way to cut items"
+				""
+				"&b&lDistilled water:&r&r Slightly faster then normal water but not the fastest"
+				""
+				"&l&bLubricant:&r&r The fastest way to cut items in the cutter"
+			]
+			hide: true
+			id: "334D2E832E01A165"
+			rewards: [{
+				id: "31A87444BE1FF6F3"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			subtitle: "Snip Snip"
+			tasks: [{
+				id: "5030DE6B41AA848F"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"334D2E832E01A165"
+				"5B7CABCFD04C8C32"
+			]
+			description: [
+				"As the name suggests, this item allows you to filter fluids, it can be placed in pumps and regulators"
+				""
+				"And you can even put them directly on the machine to filter the machines auto output or inserction of liquids"
+			]
+			hide: true
+			id: "514030CF0852BB76"
+			rewards: [{
+				id: "7C26D4F4B98DCF54"
+				item: "gtceu:item_filter"
+				type: "item"
+			}]
+			subtitle: "Filtration"
+			tasks: [{
+				id: "1B10C852CA25A9B5"
+				item: "gtceu:fluid_filter"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"514030CF0852BB76"
+				"74AD631FF3E78E17"
+			]
+			description: [
+				"Very simple machine"
+				""
+				"It allows you to collect air from its surroundings"
+				""
+				"&9&lNote:&r&r The neather and end have their own different airs to collect"
+			]
+			hide: true
+			id: "779D227A4B37F687"
+			rewards: [{
+				id: "3FEC16374B8D9D82"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			subtitle: "Sucker 3000"
+			tasks: [{
+				id: "43A04DA8D266AA46"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0526557C3E61C03D"
+				"779D227A4B37F687"
+			]
+			description: [
+				"Oxygen and nitrogen are used a lot in electric blast furnace recipes to speed them up"
+				""
+				"Oxygen is used in the arc furnace "
+			]
+			hide: true
+			id: "10DDCBDF1E026AA4"
+			subtitle: "I need to breath!!!!"
+			tasks: [
+				{
+					id: "7C9DBABFDA924DBF"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+				{
+					id: "47B359BFF39C2FFE"
+					item: "gtceu:nitrogen_bucket"
+					type: "item"
+				}
+			]
+			title: "Nitrogen and Oxygen"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0130B62334DC55AF"]
+			description: [
+				"The arc furnace will allow you to get wrought iron easier and glass eaiser but at the cost of oxygen"
+				""
+				"&6&lTip:&r&r You can recycle old machines that you dont want anymore to get some resources back"
+			]
+			hide: true
+			id: "4F37E5F030B588B1"
+			rewards: [{
+				id: "4D8B7309370ABD62"
+				item: "gtceu:graphite_dust"
+				type: "item"
+			}]
+			subtitle: "Blast furnace who?"
+			tasks: [{
+				id: "547CEA832270B303"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4F37E5F030B588B1"
+				"10DDCBDF1E026AA4"
+			]
+			description: ["Tempered glass isnt important right now besides harden glass"]
+			hide: true
+			id: "684F88FA7CDA839C"
+			rewards: [{
+				id: "74EE2C64F1655A59"
+				item: "gtceu:tempered_glass"
+				type: "item"
+			}]
+			subtitle: "Hard glass"
+			tasks: [{
+				id: "423BA3CE261E24AF"
+				item: "gtceu:tempered_glass"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["74AD631FF3E78E17"]
+			hide: true
+			id: "2E80A3FDB7E49AF3"
+			rewards: [{
+				id: "055DE98AB528F65E"
+				item: "gtceu:plate_casting_mold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6CBFAC6DC45B2017"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2E80A3FDB7E49AF3"
+				"684F88FA7CDA839C"
+			]
+			hide: true
+			id: "2A1458C693EC96EC"
+			rewards: [{
+				id: "390E340C5ED1EB3F"
+				item: "thermal:obsidian_glass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58A39A3A5FB7C801"
+				item: "thermal:obsidian_glass"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["42D9045ADB08173B"]
+			description: ["To get graphite you need to wash crushed diamond in an ore washer"]
+			hide: true
+			id: "0130B62334DC55AF"
+			rewards: [{
+				id: "1DB559B526D4F619"
+				item: "gtceu:crushed_diamond_ore"
+				type: "item"
+			}]
+			subtitle: "Hard"
+			tasks: [{
+				id: "55628C4299D26259"
+				item: "gtceu:graphite_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3D629007B6B89F03"]
+			description: ["The centrifuge will allow you to separate dusts and liquids "]
+			hide: true
+			id: "0526557C3E61C03D"
+			rewards: [{
+				count: 2
+				id: "5449DFED3C8EE317"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			subtitle: "Even more spinning"
+			tasks: [{
+				id: "4E757C44CEC9F745"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "42D9045ADB08173B"
+			rewards: [{
+				count: 4
+				id: "752159432A6FADB4"
+				item: "gtceu:crushed_diamond_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35E32E8F3A8B05B1"
+				item: "gtceu:crushed_diamond_ore"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["07EEC69306D72E4F"]
+			description: ["Ore proc right now is not important so you do not have to worry about it but if you want some byproducts, you might want to set up some ore proc"]
+			hide: true
+			id: "58189C2FB3E40DA0"
+			subtitle: "You will need some ore processing at this stage"
+			tasks: [{
+				id: "156CDF44954A9E89"
+				title: "Ore Processing"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58189C2FB3E40DA0"]
+			hide: true
+			icon: "gtceu:lv_ore_washer"
+			id: "170F8480813DCC9D"
+			tasks: [
+				{
+					id: "374083C6D34EF5AB"
+					title: "Step 1: Washing"
+					type: "checkmark"
+				}
+				{
+					id: "6D94DB5FF747DD6D"
+					item: "gtceu:lv_ore_washer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["170F8480813DCC9D"]
+			hide: true
+			icon: "gtceu:lv_thermal_centrifuge"
+			id: "330BA12E08A8F9EA"
+			tasks: [
+				{
+					id: "127899CAB0889B05"
+					title: "Step 2A: Thermal Centrifuging"
+					type: "checkmark"
+				}
+				{
+					id: "35B4A78C95CF48FD"
+					item: "gtceu:lv_thermal_centrifuge"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"330BA12E08A8F9EA"
+				"4F45865D11F981FE"
+			]
+			hide: true
+			icon: "gtceu:lv_macerator"
+			id: "2C93833636BB6500"
+			tasks: [
+				{
+					id: "26C7C28707A01146"
+					title: "Step 3: Crushing"
+					type: "checkmark"
+				}
+				{
+					consume_items: false
+					id: "44CCE44B6B0F394E"
+					item: "gtceu:lv_macerator"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["170F8480813DCC9D"]
+			hide: true
+			icon: "gtceu:lv_sifter"
+			id: "4F45865D11F981FE"
+			tasks: [
+				{
+					id: "63067F91AF24067E"
+					title: "Step 2B: Sifting"
+					type: "checkmark"
+				}
+				{
+					id: "394558B024744C11"
+					item: "gtceu:lv_sifter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2C93833636BB6500"]
+			hide: true
+			icon: "gtceu:lv_centrifuge"
+			id: "79C7498084F37DAB"
+			tasks: [
+				{
+					id: "3D9D96CE8E4B6918"
+					title: "Final Step: Decomposing"
+					type: "checkmark"
+				}
+				{
+					id: "63AD7589A16F9C14"
+					item: "gtceu:lv_centrifuge"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Final Step: Decomposing By Centrifuging"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2C93833636BB6500"
+				"79C7498084F37DAB"
+			]
+			dependency_requirement: "one_completed"
+			hide: true
+			icon: "gtceu:lv_electrolyzer"
+			id: "4CD2D49F97CA5994"
+			tasks: [
+				{
+					id: "5AC11A21B0AF38A7"
+					title: "Final Step: Decomposing"
+					type: "checkmark"
+				}
+				{
+					id: "698D6782B2272042"
+					item: "gtceu:lv_electrolyzer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Final Step: Decomposing By Electrolysis"
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["74AD631FF3E78E17"]
+			description: ["The distillery isnt used much now besides distilled water for the elctro-kinetic ore factory"]
+			hide: true
+			icon: "gtceu:lv_distillery"
+			id: "0362738F549C6611"
+			rewards: [{
+				count: 2
+				id: "204587ED0A70FAE3"
+				item: "gtceu:long_copper_rod"
+				type: "item"
+			}]
+			subtitle: "No alcohol for you"
+			tasks: [
+				{
+					id: "12741EFFFD286710"
+					item: "gtceu:lv_distillery"
+					type: "item"
+				}
+				{
+					id: "0196E62484ABA6FB"
+					item: "gtceu:distilled_water_bucket"
+					type: "item"
+				}
+			]
+			title: "Distilled Water"
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "66B2125D90DE6935"
+			rewards: [{
+				count: 4
+				id: "589E037A4DF62810"
+				item: "gtceu:crushed_rock_salt_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B1FA38B45A7D2A8"
+				item: "gtceu:crushed_rock_salt_ore"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "54B4CEA2FD3E121B"
+			rewards: [{
+				count: 4
+				id: "1B6EA1E82200A3D8"
+				item: "gtceu:crushed_rock_salt_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5EA30177E3E73ED9"
+				item: "gtceu:crushed_salt_ore"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "7FED6DCE0A7FD624"
+			rewards: [{
+				count: 8
+				id: "1C6A513D64D19930"
+				item: "gtceu:crushed_coal_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0364DD17CC2596C8"
+				item: "gtceu:crushed_coal_ore"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "351048C5F79F097D"
+			rewards: [{
+				count: 4
+				id: "3BB92599F09E30CB"
+				item: "gtceu:crushed_sapphire_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "50C55AE074B06971"
+				item: "gtceu:crushed_sapphire_ore"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "6AD8770930991162"
+			rewards: [{
+				count: 4
+				id: "1E42676444E615AD"
+				item: "gtceu:crushed_green_sapphire_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C272DEDCA05E0AA"
+				item: "gtceu:crushed_green_sapphire_ore"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "608C4F51ED197778"
+			rewards: [{
+				count: 4
+				id: "3455C4086197252D"
+				item: "gtceu:crushed_saltpeter_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "670415045D49718C"
+				item: "gtceu:crushed_saltpeter_ore"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "5E34099A72BFCD8D"
+			rewards: [{
+				count: 4
+				id: "596F1A7CDB339518"
+				item: "gtceu:crushed_ruby_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4334957213CDDBCA"
+				item: "gtceu:crushed_ruby_ore"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "5497D167171A3F37"
+			rewards: [{
+				count: 4
+				id: "12477C07F6FCA9E4"
+				item: "gtceu:crushed_lapis_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12ACE3CD4E498A6C"
+				item: "gtceu:crushed_lapis_ore"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "1518FB8C62D6AC22"
+			rewards: [{
+				count: 4
+				id: "6C249BAD347B9A3B"
+				item: "gtceu:crushed_emerald_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06E6A6DAACD4B8F2"
+				item: "gtceu:crushed_emerald_ore"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "0F81BE3944C95E15"
+			rewards: [{
+				count: 4
+				id: "3A15C83F468130DF"
+				item: "gtceu:crushed_redstone_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4202B29E87B85EC1"
+				item: "gtceu:crushed_redstone_ore"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "0CD892CFB03BFA6E"
+			rewards: [{
+				count: 8
+				id: "6233E4840D575DB2"
+				item: "gtceu:crushed_pentlandite_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52F4A20048469CC0"
+				item: "gtceu:crushed_pentlandite_ore"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "4BF20052269D7A37"
+			rewards: [{
+				count: 4
+				id: "6493E938D7C05632"
+				item: "gtceu:crushed_realgar_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B45D3617D381277"
+				item: "gtceu:crushed_realgar_ore"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "14644D9631CE53C1"
+			rewards: [{
+				count: 4
+				id: "24F3AE68BF89A183"
+				item: "gtceu:crushed_certus_quartz_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01547706BF9D3847"
+				item: "gtceu:crushed_certus_quartz_ore"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "6CEE6E0A4BF784BF"
+			rewards: [{
+				count: 8
+				id: "0A765A39FFCCEBF0"
+				item: "gtceu:crushed_silver_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3642D1B0772A1CFE"
+				item: "gtceu:crushed_silver_ore"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "6B6D10E792D49379"
+			rewards: [{
+				count: 8
+				id: "318903A031C92C06"
+				item: "gtceu:crushed_gold_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "234754C2FCFC1277"
+				item: "gtceu:crushed_gold_ore"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["77D98E1945E99A68"]
+			hide: true
+			id: "3328ABF5559E6B92"
+			rewards: [{
+				count: 4
+				id: "40EEADC9FE6FC2B7"
+				item: "gtceu:crushed_quartzite_ore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02A1AB161DDF4F1A"
+				item: "gtceu:crushed_quartzite_ore"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5497D167171A3F37"]
+			description: ["To obtain lapis now, you have to forge hammer or macerate crushed lapis and then run the impure pile through an ore washer or centrifuge"]
+			hide: true
+			id: "5B7CABCFD04C8C32"
+			rewards: [{
+				count: 4
+				id: "5D6BD2A82EA9A143"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			subtitle: "Dark blue diamonds"
+			tasks: [{
+				id: "195A3A447C7202D7"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49E26CE98AC0E1F3"]
+			description: [
+				"The energy hatch is the energy input for Multiblocks "
+				""
+				"The base energy hatch can accept up to 2 amps of its respective voltage"
+			]
+			hide: true
+			icon: "gtceu:lv_energy_input_hatch"
+			id: "01053EFFD84C99BB"
+			subtitle: "Energy for multiblocks"
+			tasks: [
+				{
+					id: "2D2B2CAD8F30EEEA"
+					item: "gtceu:lv_voltage_coil"
+					type: "item"
+				}
+				{
+					id: "37D89A1C9AB13003"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "LV Energy Hatch"
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"01053EFFD84C99BB"
+				"0362738F549C6611"
+			]
+			description: ["The electro-kinetic ore factory is a more advanced version of the kinetic ore factory that can process more types of ore and will give a higher chance of byproducts"]
+			hide: true
+			id: "7EEAC02B43036D8E"
+			rewards: [{
+				id: "4987C9FBD8551390"
+				item: "gtceu:maintenance_hatch"
+				type: "item"
+			}]
+			subtitle: "kinetic ore factory's older brother"
+			tasks: [{
+				id: "2527781ACE266151"
+				item: "gtceu:electrico_kinetic_ore_factory"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7EEAC02B43036D8E"]
+			description: ["To obtain cobalt now you can process pentlandite through the elctro-kinetic ore factory"]
+			hide: true
+			id: "18ACC2B0F5472634"
+			rewards: [{
+				count: 8
+				id: "7EAC41C7D902694B"
+				item: "gtceu:cobalt_dust"
+				type: "item"
+			}]
+			subtitle: "Gonna need the bolt cutters"
+			tasks: [{
+				id: "293AAEDD97B53F54"
+				item: "gtceu:cobalt_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"You have likely realised by now that the Energy system in &2GregTech&r is &cnowhere near as simple&r as the &1RF&r you may be used to using in modded Minecraft."
+				""
+				"The energy unit of GregTech is the EU."
+				""
+				"&1EU&r mechanics have a certain flair to them, and are not dissimilar to real-world electricity. They can also be &4dangerous and punishing&r if mishandled. However, the power system gives GregTech players a lot of &6satisfaction&r when harnessed well."
+				""
+				"&l&3Lore:&r&o The Amperage bug, exploit or feature (call it whatever you want!) from 1.12.2 GTCE has been &lfixed&r in GTCEu. The Energy network now works as intended."
+				"{@pagebreak}"
+				""
+				"Let's go over some basic physics:"
+				""
+				"° &9Power&r = &2Voltage&r * &dAmperage&r"
+				"° &1Energy&r = &9Power&r * &6Time&r"
+				""
+				"&8Resistance&r is an excluded concept in GregTech, instead being partially simulated as cable loss."
+				""
+				"The units are defined as such:"
+				""
+				"- &1EU&r is the unit of &1Energy&r."
+				"- &9EU/t&r is the &9Power&r."
+				"- &dA&r or &dAmp&r is the &dAmperage&r."
+				"- &2V&r &owould&r be the &2Voltage&r, but we prefer referring to it as &7LV&r, &bMV&r, &6HV&r... as those are the relevant values for gameplay (technically: &7LV&r = 32V = 32EU/t/A)"
+				"{@pagebreak}"
+				"Electricity in GregTech travels in \"packets\". The size of each packet is equivalent to the voltage of its tier."
+				""
+				"Taking an LV packet as an example, this \"packet\" would carry 32EU. Multiple blocks are capable of producing these EU packets, and packets are only produced if they are able to access a destination."
+				"{@pagebreak}"
+				"Every &6tick&r, &1EU&r &apackets&r attempt to transfer themselves from Energy Producers to Consumers. These &apackets&r have two parameters: a &2Voltage&r tier determined by the tier of the Producer, and &dAmperage&r. This determines how much &9Power&r can actually be transferred. "
+				""
+				"There are no partial Amps, meaning Energy is transferred only if the full Amp &apacket&r can be received. You might notice this from your machines sitting just below full EU capacity - they will only accept EU when they are missing at least 1A of their input voltage."
+				"{@pagebreak}"
+				"If a &3Machine&r receives a &2higher Voltage&r than its Tier, it'll &cexplode&r. Kaboom! Any excess &dAmperage&r won't have an adverse affect, as machines only consume as they need."
+				""
+				"The machine explosion would usually also damage terrain, but we have disabled that feature in this pack."
+				"{@pagebreak}"
+				"In summary, Energy is transported in &apackets&r of &132EU&r for &7LV&r, &1128EU&r for &bMV&r... so on and so forth. The amount of energy that is actually received by a machine can end up being lower than energy sent, due to cable loss."
+				""
+				"Machine Energy Input is limited by &2Voltage&r (too high and, well, &6boom&r!), and by &dAmperage&r. Thus, a &bMV&r Machine with &d2A&r Input connected to a &7LV&r line will never accept more than &964EU/t&r."
+				""
+				"It is still possible to run &bMV&r Machines on &7LV&r lines, but only if the recipes are low enough &9Power&r, or if you have a &3MV Battery&r in the charging slot. The machine will only accept &d1A&r when idle, and so the &3Battery&r will recharge at a maximum rate of &932EU/t&r"
+			]
+			icon: "gtceu:lv_sodium_battery"
+			id: "5FD7AF5DBD2818F8"
+			size: 1.0d
+			subtitle: "Please Read"
+			tasks: [{
+				id: "45EE8386BCB03395"
+				title: "Electricity"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Transporting EU is done via direct connection, using &aWires&r or &aCables&r."
+				""
+				"Wires are the inferior option as they will &celectrocute&r you and &close more energy&r as the electricity travels through the wire, so you want to use insulated Cables. Keep in mind that you can't combine cables into thicker variants, so make sure you insulate the right thickness to avoid any headaches."
+				""
+				"&cCable loss&r means you will have to stick your Machines close to your Generators, but that will only be a problem in earlygame. If you peek through the quest book, you will eventually be able to obtain &6Superconductors&r, sidestepping this issue!"
+				"{@pagebreak}"
+				"Keep in mind that GregTech cables suffer from \"cable loss\". Every block of cable that an EU packet travels will decrease its stored EU."
+				""
+				"For instance, transferring LV current along 6 cables each with a loss of 5EU/t will result in the packets arriving at their destination with a meagre 2EU/t (32 - [6*5]). For this reason, you will want to keep your cables short until you can start to consider better alternatives."
+				"{@pagebreak}"
+				"&6Superconductors&r are special Wires available for each Voltage tier. They don't have any Cable counterpart, but that isn't necessary, as they have absolutely &6zero cable loss&r! They also don't damage you when you touch them. "
+				""
+				"They are the best choice for wiring at any tier, if not a little expensive in comparison to the other wires."
+				"{@pagebreak}"
+				""
+				"&2GTCEu&r Cables now have &6native RF support&r! You can plug any RF appliance into an EU source and it will automatically convert. The ratio is &a4 : 1&r (RF : EU). Not that you can produce RF in this pack - but it's a thought if you wanted to make your own!"
+			]
+			icon: "gtceu:copper_octal_cable"
+			id: "3E75F0F33575D685"
+			size: 1.0d
+			subtitle: "Please Read"
+			tasks: [{
+				id: "3D5CBC7AB6EFB050"
+				title: "Cables"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The quantity of 1 packet per tick is known as an Amp (1A for short)."
+				""
+				"Each single-block Generator in GregTech is configured to produce &91A&r of its voltage tier. For &7LV&r, that results in &232EU/t&r."
+				""
+				"If a machine requires 16EU/t, one \"packet\" of 32EU is sent &6every other tick&r (assuming no cable loss) - no more, no less."
+				""
+				"A Battery Buffer with &94&r Batteries can produce up to &94 Amps&r for &2128EU/t&r as &7LV&r power, which is important for the &3Electric Blast Furnace&r - or to run multiple machines simultaneously."
+				""
+				"Generic machines are configured to draw up to &92 Amps&r to account for cable loss. Other machines have specific &9Amps IN&r, which is described in their tooltip."
+				"{@pagebreak}"
+				"The most critical thing to know is that &acables&r have an &9Amperage &climit&r. Attempting to transport more Amps than this limit will &4burn your cable up&r."
+				""
+				"&9Amps&r are drawn &oonly&r through the &aCables&r connecting the Producers and Consumers directly, and only drawn if the Consumers are active."
+				""
+				"This means you can safely step down your Cables in certain places - feel free to experiment!"
+			]
+			icon: "gtceu:lv_transformer_2a"
+			id: "59DAC22DB23F19BF"
+			size: 1.0d
+			subtitle: "Please Read"
+			tasks: [{
+				id: "68177C281442CF3E"
+				title: "Amperage"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Why does every machine have a million variants across each tier? Well, overclocking is one reason!"
+				""
+				"Overclocking is a mechanic that happens when you try to run a recipe in a machine &dthat is higher tier than the recipe itself.&r The recipe will use an increased amount of energy, but the recipe time will be cut based on how many tiers you're overclocking by."
+				""
+				"&l&3Lore:&r&o GTCE overclocking was extremely awkward. If the recipe consumed 16EU/t or below, it would do a classic 2.0x overclock. However if the recipe consumed more than 16EU/t, every Overclock would be 2.8x faster! GTCEu has a config to select the Overclock speed bonus"
+				"{@pagebreak}"
+				"A pro tip - for automated setups, overclock as little as possible!"
+				""
+				"Machines have a side menu to set the maximum voltage tier it will overclock to. Click on it to cycle through all the available Voltages and choose a limit."
+				"{@pagebreak}"
+				"Each tier above the recipe tier allows one overclock. Each overclock implies:"
+				""
+				"&9-&r 2x recipe speed"
+				"&9-&r 4x power consumption"
+				"&9->&r 2x total energy cost"
+				""
+				"As you can see, there are upsides and downsides. It is a game of balance: ask yourself if you want faster recipes at the cost of greater power consumption."
+			]
+			icon: "minecraft:clock"
+			id: "6C481944AA2A53F9"
+			size: 1.0d
+			subtitle: "Please Read"
+			tasks: [{
+				id: "5FD4924AF3C2A4A0"
+				title: "Overclocking"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 2.0d
+		}
+	]
+	title: "LV"
+}
