@@ -181,7 +181,7 @@
 			description: [
 				"If you didnt know, bamboo is the fastest growing plant in the world, that includes minecraft"
 				""
-				"You can setup a small bamboo farm and use the bamboo in a composter to get bonemeal or in a barrel to get more dirt"
+				"You can setup a small bamboo farm and use the bamboo in a barrel to get more dirt"
 			]
 			hide: true
 			id: "3979BFACF269EFE9"
@@ -504,7 +504,7 @@
 		}
 		{
 			dependencies: ["12DE6A603E2145AD"]
-			description: ["Remember when I said you can compost bamboo for bonemeal? This is the reason"]
+			description: ["You will need to compost organics to get bonemeal at this stage"]
 			hide: true
 			id: "3569C20476983715"
 			rewards: [{
