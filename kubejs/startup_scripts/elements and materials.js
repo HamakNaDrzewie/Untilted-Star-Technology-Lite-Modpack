@@ -677,7 +677,7 @@ materialRegistry(event => {
         .blastTemp(2800, 'low', VA('mv'), 1200)
         .iconSet(METALLIC);
 
-    event.create('star_steel')
+        event.create('sky_steel')
         .ingot()
         .fluid()
         .components('2x steel', '1x mystery')
