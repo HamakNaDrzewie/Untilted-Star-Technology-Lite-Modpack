@@ -286,13 +286,68 @@ materialRegistry(event => {
 
     // Periodic table materials
     // Ingots
+    periodicTableElement('Strontium', 'ingot');
+    periodicTableElement('Scandium', 'ingot');
+    periodicTableElement('Promethium', 'ingot');
+    periodicTableElement('Gadolinium', 'ingot');
+    periodicTableElement('Terbium', 'ingot');
+    periodicTableElement('Dysprosium', 'ingot');
+    periodicTableElement('Holmium', 'ingot');
+    periodicTableElement('Erbium', 'ingot');
+    periodicTableElement('Thulium', 'ingot');
+    periodicTableElement('Ytterbium', 'ingot');
+    periodicTableElement('Lutetium', 'ingot');
+    periodicTableElement('Actinium', 'ingot');
+    periodicTableElement('Protactinium', 'ingot');
+    periodicTableElement('Neptunium', 'ingot');
+    periodicTableElement('Curium', 'ingot');
+    periodicTableElement('Berkelium', 'ingot');
+    periodicTableElement('Californium', 'ingot');
+    periodicTableElement('Einsteinium', 'ingot');
+    periodicTableElement('Fermium', 'ingot');
+    periodicTableElement('Mendelevium', 'ingot');
+    periodicTableElement('Nobelium', 'ingot');
+    periodicTableElement('Lawrencium', 'ingot');
+    periodicTableElement('Rutherfordium', 'ingot');
+    periodicTableElement('Dubnium', 'ingot');
+    periodicTableElement('Seaborgium', 'ingot');
+    periodicTableElement('Bohrium', 'ingot');
+    periodicTableElement('Hassium', 'ingot');
+    periodicTableElement('Nobelium', 'ingot');
+    periodicTableElement('Meitnerium', 'ingot');
+    periodicTableElement('Roentgenium', 'ingot');
+    periodicTableElement('Nihonium', 'ingot');
+    periodicTableElement('Flerovium', 'ingot');
+    periodicTableElement('Moscovium', 'ingot');
+    periodicTableElement('Livermorium', 'ingot');
+    periodicTableElement('Oganesson', 'ingot');
+    periodicTableElement('Praseodymium', 'ingot');
+    periodicTableElement('Zirconium', 'ingot');
+    periodicTableElement('Hafnium', 'ingot');
+    periodicTableElement('Technetium', 'ingot');
+    periodicTableElement('Rhenium', 'ingot');
+    periodicTableElement('Germanium', 'ingot');
+    periodicTableElement('Tellurium', 'ingot');
+    periodicTableElement('Selenium', 'ingot');
+    periodicTableElement('Hafnium', 'ingot');
+    
+
 
 
     // Dusts
+    periodicTableElement('Rubidium', 'dust');
+    periodicTableElement('Caesium', 'dust');
+    periodicTableElement('Francium', 'dust');
+    periodicTableElement('Astatine', 'dust');
+    periodicTableElement('Iodine', 'dust');
+    periodicTableElement('Rubidium', 'dust');
+    periodicTableElement('Rubidium', 'dust');
+
 
 
     // Liquids
-
+    periodicTableElement('Copernicium', 'liquid');
+    periodicTableElement('Bromine', 'liquid');
 
     // Gasses
 
