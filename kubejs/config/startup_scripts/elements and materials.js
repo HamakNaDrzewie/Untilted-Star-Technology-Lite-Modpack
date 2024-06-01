@@ -286,63 +286,65 @@ materialRegistry(event => {
 
     // Periodic table materials
     // Ingots
-    periodicTableElement('strontium', 'ingot');
-    periodicTableElement('scandium', 'ingot');
-    periodicTableElement('promethium', 'ingot');
-    periodicTableElement('gadolinium', 'ingot');
-    periodicTableElement('terbium', 'ingot');
-    periodicTableElement('dysprosium', 'ingot');
-    periodicTableElement('holmium', 'ingot');
-    periodicTableElement('erbium', 'ingot');
-    periodicTableElement('thulium', 'ingot');
-    periodicTableElement('ytterbium', 'ingot');
-    periodicTableElement('actinium', 'ingot');
-    periodicTableElement('protactinium', 'ingot');
-    periodicTableElement('neptunium', 'ingot');
-    periodicTableElement('curium', 'ingot');
-    periodicTableElement('berkelium', 'ingot');
-    periodicTableElement('californium', 'ingot');
-    periodicTableElement('einsteinium', 'ingot');
-    periodicTableElement('fermium', 'ingot');
-    periodicTableElement('mendelevium', 'ingot');
-    periodicTableElement('nobelium', 'ingot');
-    periodicTableElement('lawrencium', 'ingot');
-    periodicTableElement('rutherfordium', 'ingot');
-    periodicTableElement('dubnium', 'ingot');
-    periodicTableElement('seaborgium', 'ingot');
-    periodicTableElement('bohrium', 'ingot');
-    periodicTableElement('hassium', 'ingot');
-    periodicTableElement('meitnerium', 'ingot');
-    periodicTableElement('roentgenium', 'ingot');
-    periodicTableElement('nihonium', 'ingot');
-    periodicTableElement('flerovium', 'ingot');
-    periodicTableElement('moscovium', 'ingot');
-    periodicTableElement('livermorium', 'ingot');
-    periodicTableElement('tennessine', 'ingot');
-    periodicTableElement('oganesson', 'ingot');
-    periodicTableElement('praseodymium', 'ingot');
-    periodicTableElement('zirconium', 'ingot');
-    periodicTableElement('hafnium', 'ingot');
-    periodicTableElement('technetium', 'ingot');
-    periodicTableElement('rhenium', 'ingot');
-    periodicTableElement('germanium', 'ingot');
-    periodicTableElement('tellurium', 'ingot');
-    periodicTableElement('selenium', 'ingot');
+    //periodicTableElement('Strontium', 'ingot');
+    //periodicTableElement('Scandium', 'ingot');
+    //periodicTableElement('Promethium', 'ingot');
+    //periodicTableElement('Gadolinium', 'ingot');
+    //periodicTableElement('Terbium', 'ingot');
+    //periodicTableElement('Dysprosium', 'ingot');
+    //periodicTableElement('Holmium', 'ingot');
+    //periodicTableElement('Erbium', 'ingot');
+    //periodicTableElement('Thulium', 'ingot');
+    //periodicTableElement('Ytterbium', 'ingot');
+    //periodicTableElement('Lutetium', 'ingot');
+    //periodicTableElement('Actinium', 'ingot');
+    //periodicTableElement('Protactinium', 'ingot');
+    //periodicTableElement('Neptunium', 'ingot');
+    //periodicTableElement('Curium', 'ingot');
+    //periodicTableElement('Berkelium', 'ingot');
+    //periodicTableElement('Californium', 'ingot');
+    //periodicTableElement('Einsteinium', 'ingot');
+    //periodicTableElement('Fermium', 'ingot');
+    //periodicTableElement('Mendelevium', 'ingot');
+    //periodicTableElement('Nobelium', 'ingot');
+    //periodicTableElement('Lawrencium', 'ingot');
+    //periodicTableElement('Rutherfordium', 'ingot');
+    //periodicTableElement('Dubnium', 'ingot');
+    //periodicTableElement('Seaborgium', 'ingot');
+    //periodicTableElement('Bohrium', 'ingot');
+    //periodicTableElement('Hassium', 'ingot');
+    //periodicTableElement('Nobelium', 'ingot');
+    //periodicTableElement('Meitnerium', 'ingot');
+    //periodicTableElement('Roentgenium', 'ingot');
+    //periodicTableElement('Nihonium', 'ingot');
+    //periodicTableElement('Flerovium', 'ingot');
+    //periodicTableElement('Moscovium', 'ingot');
+    //periodicTableElement('Livermorium', 'ingot');
+    //periodicTableElement('Oganesson', 'ingot');
+    //periodicTableElement('Praseodymium', 'ingot');
+    //periodicTableElement('Zirconium', 'ingot');
+    //periodicTableElement('Hafnium', 'ingot');
+    //periodicTableElement('Technetium', 'ingot');
+    //periodicTableElement('Rhenium', 'ingot');
+    //periodicTableElement('Germanium', 'ingot');
+    //periodicTableElement('Tellurium', 'ingot');
+    //periodicTableElement('Selenium', 'ingot');
     
 
 
 
     // Dusts
-    periodicTableElement('rubidium', 'dust');
-    periodicTableElement('francium', 'dust');
-    periodicTableElement('astatine', 'dust');
-    periodicTableElement('iodine', 'dust');
+    //periodicTableElement('Rubidium', 'dust');
+    //periodicTableElement('Caesium', 'dust');
+    //periodicTableElement('Francium', 'dust');
+    //periodicTableElement('Astatine', 'dust');
+    //periodicTableElement('Iodine', 'dust');
 
 
 
     // Liquids
-    periodicTableElement('copernicium', 'fluid');
-    periodicTableElement('bromine', 'fluid');
+    //periodicTableElement('Copernicium', 'liquid');
+    //periodicTableElement('Bromine', 'liquid');
 
     // Gasses
 
@@ -357,71 +359,7 @@ materialRegistry(event => {
 
 
     // Materials from elements
-
-    // Voltage Tiers Alloys
-
-    event.create('ferrovanadium') //hv
-        .ingot(2)
-        .fluid()
-        .components('4x steel', '4x vanadium', '1x manganese', '1x silicon')
-        .color(0x999966)
-        .iconSet(METALLIC)
-        .flags(foil, gear, long_rod, plates,
-        rod, rotor, small_gear, ring, frame);
-
-    event.create('ntth') //ev
-        .ingot(3)
-        .fluid()
-        .components('5x niobium', '3x tantalum', '1x titanium', '1x hafnium')
-        .color(0x323c45)
-        .iconSet(METALLIC)
-        .flags(foil, gear, long_rod, plates,
-        rod, rotor, small_gear, ring, frame);
-
-    event.create('tungsten_rhenium') //iv
-        .ingot(4)
-        .fluid()
-        .components('3x tungsten', '1x rhenium')
-        .color(0x4b0066)
-        .iconSet(METALLIC)
-        .flags(foil, gear, long_rod, plates,
-        rod, rotor, small_gear, ring, frame);
-
-    event.create('complex_osmiridium_alloy') //luv
-        .ingot(4)
-        .fluid()
-        .components('2x osmiridium', '1x curium', '1x ruthenium')
-        .color(0x9494b8)
-        .iconSet(SHINY)
-        .flags(foil, gear, long_rod, plates,
-        rod, rotor, small_gear, ring, frame);
-
-    event.create('aquatic_heavy_alloy') //zpm
-        .ingot(5)
-        .fluid()
-        .components('3x naquadah', '3x seaborgium', '2x bohrium', '2x trinium', '1x osmiridium')
-        .color(0x3399ff)
-        .iconSet(METALLIC)
-        .flags(foil, gear, long_rod, plates,
-        rod, rotor, small_gear, ring, frame);
-
-    event.create('roent_heavy_alloy') //uv
-        .ingot(6)
-        .fluid()
-        .components('3x naquadria', '3x roentgenium', '1x tennessine', '1x oganesson')
-        .color(0xffb3d1)
-        .iconSet(METALLIC)
-        .flags(foil, gear, long_rod, plates,
-        rod, rotor, small_gear, ring, frame);
-
-    event.create('spacecraft_alloy') //uhv
-        .ingot(6)
-        .fluid()
-        .components('3x tritanium', '3x neutronium', '1x roent_heavy_alloy', '1x aquatic_heavy_alloy')
-        .color(0x514059)
-        .iconSet(METALLIC)
-        .flags(foil, gear, long_rod, plates,
-        rod, rotor, small_gear, ring, frame);
+    
 
     // This material is meant to place a ? symbol in a material's chemical formula
     event.create('mystery')
