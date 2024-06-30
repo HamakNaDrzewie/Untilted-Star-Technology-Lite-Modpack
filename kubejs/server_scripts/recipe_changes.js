@@ -192,14 +192,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6);
 
-    event.recipes.gtceu.rock_breaker('blackstone')
-        .notConsumable('minecraft:blackstone')
-        .itemOutputs('minecraft:blackstone')
-        .duration(16)
-        .EUt(7)
-        ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
-        ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water")
-        .addCondition($RockBreakerCondition.INSTANCE);
+    //event.recipes.gtceu.rock_breaker('blackstone')
+    //    .notConsumable('minecraft:blackstone')
+    //    .itemOutputs('minecraft:blackstone')
+    //    .duration(16)
+    //    .EUt(7)
+    //    ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
+    //    ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water")
+    //    .addCondition($RockBreakerCondition.INSTANCE);
 
     event.recipes.gtceu.macerator('plutonium239')
         .itemInputs('nuclearcraft:plutonium_239')
