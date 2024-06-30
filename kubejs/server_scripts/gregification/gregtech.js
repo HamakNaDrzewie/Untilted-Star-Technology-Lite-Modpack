@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .EUt(2);
 
     event.recipes.gtceu.rock_generator('generate_dirt')
-        .circuit(2)
+        .circuit(3)
         .itemOutputs('minecraft:dirt')
         .duration(100)
         .EUt(2);
